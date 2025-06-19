@@ -1,0 +1,22 @@
+
+{
+    "accounts": [
+        {
+            "EMAIL_USER": "wilfred.chawaguta@gmail.com",
+            "EMAIL_PASS": "vyjabtrlbuooqvhn"
+        },
+        {
+            "EMAIL_USER": "metcfo@gmail.com",
+            "EMAIL_PASS": "ebmabmozrvioyezw"
+        },
+        {
+            "EMAIL_USER": "charlesnyangadzayi@gmail.com",
+            "EMAIL_PASS": "ebma bmoz rvio yezw"
+        }
+    ],
+    "recipients": [
+        "wilfred.chawaguta@gmail.com",
+        "metcfo@gmail.com"
+
+    ]
+}

@@ -1,0 +1,12 @@
+{
+  "log_directory": "/home/wrf/nons/gfs-retrieval/logs/",
+  "log_retention_days": 1,
+  "gfs_retrieval_directory": "/home/wrf/nons/gfs-retrieval/",
+  "output_directory": "/home/wrf/nons/gfs-retrieval/local_outdata/",
+  "auto_indata_directory": "/home/wrf/nons/auto/indata/",
+  "plotting_toolbox_directory": "/home/wrf/nons/python-plotting-toolbox/",
+  "ftp_upload_directory": "/home/wrf/ftp/upload/",
+  "southern_africa_directory": "/home/wrf/uems/runs/southern_africa/emsprd/grads/",
+  "zimbabwe_directory": "/home/wrf/uems/runs/zimbabwe/emsprd/grads/",
+  "wx_presentation_directory": "/home/wrf/deployed/webb-downloading/wx_presentation/images/"
+}

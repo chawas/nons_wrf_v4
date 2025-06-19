@@ -1,0 +1,22 @@
+{
+  "SCRIPT_NAME": "auto_zimbabwe_local_am2.bash",
+  "SCRIPT_DIR": "/home/wrf/nons/auto",
+  "DATA_DIR": "/home/wrf/nons/gfs-retrieval/local_outdata",
+  "LOGFILE_DIR": "/home/wrf/nons/gfs-retrieval/logs",
+  "RETRIEVE_SCRIPT": "/home/wrf/nons/gfs-retrieval/retrieve_gfs_data3.py",
+  "ZIPPED_OUTPUT": "/tmp/symbograms_output.zip",
+  "PRODUCT_PATHS": {
+    "Symbograms": "/home/wrf/nons/python-plotting-toolbox/local_outdata/symbograms",
+    "Accumulated Precip": "/home/wrf/UEMS/output/images",
+    "Bulletins": "/home/wrf/UEMS/output/bulletins"
+  },
+  "EXPECTED_FILES": {
+    "Symbograms": ["BeitBridge.html", "Bindura.html"],
+    "Accumulated Precip": ["*.png"]
+  },
+  "EMAIL_CONFIG_FILE": "/home/wrf/nons/auto/config_email.json",
+  "MAX_RETRIES": 3,
+  "RETRY_DELAY": 60,
+  "GFS_EXPECTED_COUNT": 384,
+  "GFS_MIN_SIZE": 512000
+}

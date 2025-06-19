@@ -1,0 +1,1232 @@
+Script started at Tue Jun 17 11:40:25 AM CAT 2025
+Script directory: /home/wrf/nons/auto
+Attempt 1 of 100: Running auto_zimbabwe_local_am2.bash at Tue Jun 17 11:40:25 AM CAT 2025...
+Script started at: Tue Jun 17 11:40:25 AM CAT 2025
+Log file: /home/wrf/nons/gfs-retrieval/logs/auto_production_20250617114025.log
+Old log files cleaned.
+Production started: 20250617 to 20250703
+Date for GFS retrieval: 2506170000
+Retrieving GFS data...
+Current directory: /home/wrf/nons/gfs-retrieval
+Virtual environment activated.
+Deleted data from local_outdata.
+1614553 2025-06-17 11:40:25,415 - carl-gfs-data-retrieval - INFO - Trying with https://nomads.ncep.noaa.gov/pub/data/nccf/com/gfs/prod/gfs.20250617/00/...
+1614553 2025-06-17 11:40:33,571 - carl-gfs-data-retrieval - INFO - https://nomads.ncep.noaa.gov/pub/data/nccf/com/gfs/prod/gfs.20250617/00/ seems valid. Will continue
+1614553 2025-06-17 11:40:33,573 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0000000 already exists. Skipping.
+1614553 2025-06-17 11:40:33,573 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0010000 already exists. Skipping.
+1614553 2025-06-17 11:40:33,573 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0020000 already exists. Skipping.
+1614553 2025-06-17 11:40:33,573 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0030000 already exists. Skipping.
+1614553 2025-06-17 11:40:33,574 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0040000 already exists. Skipping.
+1614553 2025-06-17 11:40:33,574 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0050000 already exists. Skipping.
+1614553 2025-06-17 11:40:33,574 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0060000 already exists. Skipping.
+1614553 2025-06-17 11:40:33,574 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0070000 already exists. Skipping.
+1614553 2025-06-17 11:40:33,574 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0080000 already exists. Skipping.
+1614553 2025-06-17 11:40:33,575 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0090000 already exists. Skipping.
+1614553 2025-06-17 11:40:33,575 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0100000 already exists. Skipping.
+1614553 2025-06-17 11:40:33,575 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0110000 already exists. Skipping.
+1614553 2025-06-17 11:40:33,575 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0120000 already exists. Skipping.
+1614553 2025-06-17 11:40:33,575 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0130000 already exists. Skipping.
+1614553 2025-06-17 11:40:33,575 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0140000 already exists. Skipping.
+1614553 2025-06-17 11:40:33,575 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0150000 already exists. Skipping.
+1614553 2025-06-17 11:40:33,575 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0160000 already exists. Skipping.
+1614553 2025-06-17 11:40:33,576 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0170000 already exists. Skipping.
+1614553 2025-06-17 11:40:33,576 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0180000 already exists. Skipping.
+1614553 2025-06-17 11:40:33,576 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0190000 already exists. Skipping.
+1614553 2025-06-17 11:40:33,576 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0200000 already exists. Skipping.
+1614553 2025-06-17 11:40:33,576 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0210000 already exists. Skipping.
+1614553 2025-06-17 11:40:33,576 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0220000 already exists. Skipping.
+1614553 2025-06-17 11:40:33,576 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0230000 already exists. Skipping.
+1614553 2025-06-17 11:40:33,576 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0240000 already exists. Skipping.
+1614553 2025-06-17 11:40:33,576 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0250000 already exists. Skipping.
+1614553 2025-06-17 11:40:33,577 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0260000 already exists. Skipping.
+1614553 2025-06-17 11:40:33,577 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0270000 already exists. Skipping.
+1614553 2025-06-17 11:40:33,577 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0280000 already exists. Skipping.
+1614553 2025-06-17 11:40:33,577 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0290000 already exists. Skipping.
+1614553 2025-06-17 11:40:33,577 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0300000 already exists. Skipping.
+1614553 2025-06-17 11:40:33,577 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0310000 already exists. Skipping.
+1614553 2025-06-17 11:40:33,577 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0320000 already exists. Skipping.
+1614553 2025-06-17 11:40:33,577 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0330000 already exists. Skipping.
+1614553 2025-06-17 11:40:33,577 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0340000 already exists. Skipping.
+1614553 2025-06-17 11:40:33,577 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0350000 already exists. Skipping.
+1614553 2025-06-17 11:40:33,578 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0360000 already exists. Skipping.
+1614553 2025-06-17 11:40:33,578 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0370000 already exists. Skipping.
+1614553 2025-06-17 11:40:33,578 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0380000 already exists. Skipping.
+1614553 2025-06-17 11:40:33,578 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0390000 already exists. Skipping.
+1614553 2025-06-17 11:40:33,578 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0400000 already exists. Skipping.
+1614553 2025-06-17 11:40:33,578 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0410000 already exists. Skipping.
+1614553 2025-06-17 11:40:33,578 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0420000 already exists. Skipping.
+1614553 2025-06-17 11:40:33,578 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0430000 already exists. Skipping.
+1614553 2025-06-17 11:40:33,579 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0440000 already exists. Skipping.
+1614553 2025-06-17 11:40:33,579 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0450000 already exists. Skipping.
+1614553 2025-06-17 11:40:33,579 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0460000 already exists. Skipping.
+1614553 2025-06-17 11:40:33,579 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0470000 already exists. Skipping.
+1614553 2025-06-17 11:40:33,579 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0480000 already exists. Skipping.
+1614553 2025-06-17 11:40:33,579 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0490000 already exists. Skipping.
+1614553 2025-06-17 11:40:33,579 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0500000 already exists. Skipping.
+1614553 2025-06-17 11:40:33,579 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0510000 already exists. Skipping.
+DEBUG: Loaded config_json = {'common': {'domainURL': 'https://nomads.ncep.noaa.gov/pub/data/nccf/com/gfs/prod/', 'outdataPath': './local_outdata/', 'fileSuffix': '.grib2', 'maxForecastLength': 384}}
+forecast_cycle_date (2025-06-17 00:40:25.415299)
+forecast_cycle_URL_date_string (20250617/00/)
+parent_URL (https://nomads.ncep.noaa.gov/pub/data/nccf/com/gfs/prod/gfs.20250617/00/)
+forecast_cycle_date_str_in (20250617)
+forecast_cycle_date_str_out (250617)
+forecast_cycle_hour_str (00)
+forecast_length_hour_str (000)
+out_filename (2506170000_gfs_global.grb2f0000000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0000000)
+forecast_length_hour_str (001)
+out_filename (2506170000_gfs_global.grb2f0010000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0010000)
+forecast_length_hour_str (002)
+out_filename (2506170000_gfs_global.grb2f0020000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0020000)
+forecast_length_hour_str (003)
+out_filename (2506170000_gfs_global.grb2f0030000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0030000)
+forecast_length_hour_str (004)
+out_filename (2506170000_gfs_global.grb2f0040000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0040000)
+forecast_length_hour_str (005)
+out_filename (2506170000_gfs_global.grb2f0050000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0050000)
+forecast_length_hour_str (006)
+out_filename (2506170000_gfs_global.grb2f0060000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0060000)
+forecast_length_hour_str (007)
+out_filename (2506170000_gfs_global.grb2f0070000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0070000)
+forecast_length_hour_str (008)
+out_filename (2506170000_gfs_global.grb2f0080000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0080000)
+forecast_length_hour_str (009)
+out_filename (2506170000_gfs_global.grb2f0090000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0090000)
+forecast_length_hour_str (010)
+out_filename (2506170000_gfs_global.grb2f0100000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0100000)
+forecast_length_hour_str (011)
+out_filename (2506170000_gfs_global.grb2f0110000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0110000)
+forecast_length_hour_str (012)
+out_filename (2506170000_gfs_global.grb2f0120000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0120000)
+forecast_length_hour_str (013)
+out_filename (2506170000_gfs_global.grb2f0130000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0130000)
+forecast_length_hour_str (014)
+out_filename (2506170000_gfs_global.grb2f0140000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0140000)
+forecast_length_hour_str (015)
+out_filename (2506170000_gfs_global.grb2f0150000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0150000)
+forecast_length_hour_str (016)
+out_filename (2506170000_gfs_global.grb2f0160000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0160000)
+forecast_length_hour_str (017)
+out_filename (2506170000_gfs_global.grb2f0170000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0170000)
+forecast_length_hour_str (018)
+out_filename (2506170000_gfs_global.grb2f0180000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0180000)
+forecast_length_hour_str (019)
+out_filename (2506170000_gfs_global.grb2f0190000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0190000)
+forecast_length_hour_str (020)
+out_filename (2506170000_gfs_global.grb2f0200000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0200000)
+forecast_length_hour_str (021)
+out_filename (2506170000_gfs_global.grb2f0210000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0210000)
+forecast_length_hour_str (022)
+out_filename (2506170000_gfs_global.grb2f0220000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0220000)
+forecast_length_hour_str (023)
+out_filename (2506170000_gfs_global.grb2f0230000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0230000)
+forecast_length_hour_str (024)
+out_filename (2506170000_gfs_global.grb2f0240000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0240000)
+forecast_length_hour_str (025)
+out_filename (2506170000_gfs_global.grb2f0250000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0250000)
+forecast_length_hour_str (026)
+out_filename (2506170000_gfs_global.grb2f0260000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0260000)
+forecast_length_hour_str (027)
+out_filename (2506170000_gfs_global.grb2f0270000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0270000)
+forecast_length_hour_str (028)
+out_filename (2506170000_gfs_global.grb2f0280000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0280000)
+forecast_length_hour_str (029)
+out_filename (2506170000_gfs_global.grb2f0290000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0290000)
+forecast_length_hour_str (030)
+out_filename (2506170000_gfs_global.grb2f0300000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0300000)
+forecast_length_hour_str (031)
+out_filename (2506170000_gfs_global.grb2f0310000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0310000)
+forecast_length_hour_str (032)
+out_filename (2506170000_gfs_global.grb2f0320000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0320000)
+forecast_length_hour_str (033)
+out_filename (2506170000_gfs_global.grb2f0330000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0330000)
+forecast_length_hour_str (034)
+out_filename (2506170000_gfs_global.grb2f0340000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0340000)
+forecast_length_hour_str (035)
+out_filename (2506170000_gfs_global.grb2f0350000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0350000)
+forecast_length_hour_str (036)
+out_filename (2506170000_gfs_global.grb2f0360000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0360000)
+forecast_length_hour_str (037)
+out_filename (2506170000_gfs_global.grb2f0370000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0370000)
+forecast_length_hour_str (038)
+out_filename (2506170000_gfs_global.grb2f0380000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0380000)
+forecast_length_hour_str (039)
+out_filename (2506170000_gfs_global.grb2f0390000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0390000)
+forecast_length_hour_str (040)
+out_filename (2506170000_gfs_global.grb2f0400000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0400000)
+forecast_length_hour_str (041)
+out_filename (2506170000_gfs_global.grb2f0410000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0410000)
+forecast_length_hour_str (042)
+out_filename (2506170000_gfs_global.grb2f0420000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0420000)
+forecast_length_hour_str (043)
+out_filename (2506170000_gfs_global.grb2f0430000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0430000)
+forecast_length_hour_str (044)
+out_filename (2506170000_gfs_global.grb2f0440000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0440000)
+forecast_length_hour_str (045)
+out_filename (2506170000_gfs_global.grb2f0450000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0450000)
+forecast_length_hour_str (046)
+out_filename (2506170000_gfs_global.grb2f0460000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0460000)
+forecast_length_hour_str (047)
+out_filename (2506170000_gfs_global.grb2f0470000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0470000)
+forecast_length_hour_str (048)
+out_filename (2506170000_gfs_global.grb2f0480000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0480000)
+forecast_length_hour_str (049)
+out_filename (2506170000_gfs_global.grb2f0490000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0490000)
+forecast_length_hour_str (050)
+out_filename (2506170000_gfs_global.grb2f0500000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0500000)
+forecast_length_hour_str (051)
+out_filename (2506170000_gfs_global.grb2f0510000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0510000)
+forecast_length_hour_str (052)
+out_filename (2506170000_gfs_global.grb2f0520000)
+1614553 2025-06-17 11:40:33,579 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0520000 already exists. Skipping.
+1614553 2025-06-17 11:40:33,580 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0530000 already exists. Skipping.
+1614553 2025-06-17 11:40:33,580 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0540000 already exists. Skipping.
+1614553 2025-06-17 11:40:33,580 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0550000 already exists. Skipping.
+1614553 2025-06-17 11:40:33,580 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0560000 already exists. Skipping.
+1614553 2025-06-17 11:40:33,580 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0570000 already exists. Skipping.
+1614553 2025-06-17 11:40:33,580 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0580000 already exists. Skipping.
+1614553 2025-06-17 11:40:33,580 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0590000 already exists. Skipping.
+1614553 2025-06-17 11:40:33,580 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0600000 already exists. Skipping.
+1614553 2025-06-17 11:40:33,580 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0610000 already exists. Skipping.
+1614553 2025-06-17 11:40:33,581 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0620000 already exists. Skipping.
+1614553 2025-06-17 11:40:33,581 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0630000 already exists. Skipping.
+1614553 2025-06-17 11:40:33,581 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0640000 already exists. Skipping.
+1614553 2025-06-17 11:40:33,581 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0650000 already exists. Skipping.
+1614553 2025-06-17 11:40:33,581 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0660000 already exists. Skipping.
+1614553 2025-06-17 11:40:33,581 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0670000 already exists. Skipping.
+1614553 2025-06-17 11:40:33,581 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0680000 already exists. Skipping.
+1614553 2025-06-17 11:40:33,581 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0690000 already exists. Skipping.
+1614553 2025-06-17 11:40:33,581 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0700000 already exists. Skipping.
+1614553 2025-06-17 11:40:33,581 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0710000 already exists. Skipping.
+1614553 2025-06-17 11:40:33,582 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0720000 already exists. Skipping.
+1614553 2025-06-17 11:40:33,582 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0730000 already exists. Skipping.
+1614553 2025-06-17 11:40:33,582 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0740000 already exists. Skipping.
+1614553 2025-06-17 11:40:33,582 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0750000 already exists. Skipping.
+1614553 2025-06-17 11:40:33,582 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0760000 already exists. Skipping.
+1614553 2025-06-17 11:40:33,582 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0770000 already exists. Skipping.
+1614553 2025-06-17 11:40:33,582 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0780000 already exists. Skipping.
+1614553 2025-06-17 11:40:33,582 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0790000 already exists. Skipping.
+1614553 2025-06-17 11:40:33,582 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0800000 already exists. Skipping.
+1614553 2025-06-17 11:40:33,583 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0810000 already exists. Skipping.
+1614553 2025-06-17 11:40:33,583 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0820000 already exists. Skipping.
+1614553 2025-06-17 11:40:33,583 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0830000 already exists. Skipping.
+1614553 2025-06-17 11:40:33,583 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0840000 already exists. Skipping.
+1614553 2025-06-17 11:40:33,583 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0850000 already exists. Skipping.
+1614553 2025-06-17 11:40:33,583 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0860000 already exists. Skipping.
+1614553 2025-06-17 11:40:33,583 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0870000 already exists. Skipping.
+1614553 2025-06-17 11:40:33,583 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0880000 already exists. Skipping.
+1614553 2025-06-17 11:40:33,583 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0890000 already exists. Skipping.
+1614553 2025-06-17 11:40:33,584 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0900000 already exists. Skipping.
+1614553 2025-06-17 11:40:33,584 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0910000 already exists. Skipping.
+1614553 2025-06-17 11:40:33,584 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0920000 already exists. Skipping.
+1614553 2025-06-17 11:40:33,584 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0930000 already exists. Skipping.
+1614553 2025-06-17 11:40:33,584 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0940000 already exists. Skipping.
+1614553 2025-06-17 11:40:33,584 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0950000 already exists. Skipping.
+1614553 2025-06-17 11:40:33,584 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0960000 already exists. Skipping.
+1614553 2025-06-17 11:40:33,584 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0970000 already exists. Skipping.
+1614553 2025-06-17 11:40:33,584 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0980000 already exists. Skipping.
+1614553 2025-06-17 11:40:33,584 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0990000 already exists. Skipping.
+1614553 2025-06-17 11:40:33,585 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f1000000 already exists. Skipping.
+1614553 2025-06-17 11:40:33,585 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f1010000 already exists. Skipping.
+1614553 2025-06-17 11:40:33,585 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f1020000 already exists. Skipping.
+1614553 2025-06-17 11:40:33,585 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f1030000 already exists. Skipping.
+1614553 2025-06-17 11:40:33,585 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f1040000 already exists. Skipping.
+1614553 2025-06-17 11:40:33,585 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f1050000 already exists. Skipping.
+1614553 2025-06-17 11:40:33,585 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f1060000 already exists. Skipping.
+1614553 2025-06-17 11:40:33,585 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f1070000 already exists. Skipping.
+output_path (./local_outdata/2506170000_gfs_global.grb2f0520000)
+forecast_length_hour_str (053)
+out_filename (2506170000_gfs_global.grb2f0530000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0530000)
+forecast_length_hour_str (054)
+out_filename (2506170000_gfs_global.grb2f0540000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0540000)
+forecast_length_hour_str (055)
+out_filename (2506170000_gfs_global.grb2f0550000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0550000)
+forecast_length_hour_str (056)
+out_filename (2506170000_gfs_global.grb2f0560000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0560000)
+forecast_length_hour_str (057)
+out_filename (2506170000_gfs_global.grb2f0570000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0570000)
+forecast_length_hour_str (058)
+out_filename (2506170000_gfs_global.grb2f0580000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0580000)
+forecast_length_hour_str (059)
+out_filename (2506170000_gfs_global.grb2f0590000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0590000)
+forecast_length_hour_str (060)
+out_filename (2506170000_gfs_global.grb2f0600000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0600000)
+forecast_length_hour_str (061)
+out_filename (2506170000_gfs_global.grb2f0610000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0610000)
+forecast_length_hour_str (062)
+out_filename (2506170000_gfs_global.grb2f0620000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0620000)
+forecast_length_hour_str (063)
+out_filename (2506170000_gfs_global.grb2f0630000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0630000)
+forecast_length_hour_str (064)
+out_filename (2506170000_gfs_global.grb2f0640000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0640000)
+forecast_length_hour_str (065)
+out_filename (2506170000_gfs_global.grb2f0650000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0650000)
+forecast_length_hour_str (066)
+out_filename (2506170000_gfs_global.grb2f0660000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0660000)
+forecast_length_hour_str (067)
+out_filename (2506170000_gfs_global.grb2f0670000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0670000)
+forecast_length_hour_str (068)
+out_filename (2506170000_gfs_global.grb2f0680000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0680000)
+forecast_length_hour_str (069)
+out_filename (2506170000_gfs_global.grb2f0690000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0690000)
+forecast_length_hour_str (070)
+out_filename (2506170000_gfs_global.grb2f0700000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0700000)
+forecast_length_hour_str (071)
+out_filename (2506170000_gfs_global.grb2f0710000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0710000)
+forecast_length_hour_str (072)
+out_filename (2506170000_gfs_global.grb2f0720000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0720000)
+forecast_length_hour_str (073)
+out_filename (2506170000_gfs_global.grb2f0730000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0730000)
+forecast_length_hour_str (074)
+out_filename (2506170000_gfs_global.grb2f0740000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0740000)
+forecast_length_hour_str (075)
+out_filename (2506170000_gfs_global.grb2f0750000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0750000)
+forecast_length_hour_str (076)
+out_filename (2506170000_gfs_global.grb2f0760000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0760000)
+forecast_length_hour_str (077)
+out_filename (2506170000_gfs_global.grb2f0770000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0770000)
+forecast_length_hour_str (078)
+out_filename (2506170000_gfs_global.grb2f0780000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0780000)
+forecast_length_hour_str (079)
+out_filename (2506170000_gfs_global.grb2f0790000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0790000)
+forecast_length_hour_str (080)
+out_filename (2506170000_gfs_global.grb2f0800000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0800000)
+forecast_length_hour_str (081)
+out_filename (2506170000_gfs_global.grb2f0810000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0810000)
+forecast_length_hour_str (082)
+out_filename (2506170000_gfs_global.grb2f0820000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0820000)
+forecast_length_hour_str (083)
+out_filename (2506170000_gfs_global.grb2f0830000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0830000)
+forecast_length_hour_str (084)
+out_filename (2506170000_gfs_global.grb2f0840000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0840000)
+forecast_length_hour_str (085)
+out_filename (2506170000_gfs_global.grb2f0850000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0850000)
+forecast_length_hour_str (086)
+out_filename (2506170000_gfs_global.grb2f0860000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0860000)
+forecast_length_hour_str (087)
+out_filename (2506170000_gfs_global.grb2f0870000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0870000)
+forecast_length_hour_str (088)
+out_filename (2506170000_gfs_global.grb2f0880000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0880000)
+forecast_length_hour_str (089)
+out_filename (2506170000_gfs_global.grb2f0890000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0890000)
+forecast_length_hour_str (090)
+out_filename (2506170000_gfs_global.grb2f0900000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0900000)
+forecast_length_hour_str (091)
+out_filename (2506170000_gfs_global.grb2f0910000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0910000)
+forecast_length_hour_str (092)
+out_filename (2506170000_gfs_global.grb2f0920000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0920000)
+forecast_length_hour_str (093)
+out_filename (2506170000_gfs_global.grb2f0930000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0930000)
+forecast_length_hour_str (094)
+out_filename (2506170000_gfs_global.grb2f0940000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0940000)
+forecast_length_hour_str (095)
+out_filename (2506170000_gfs_global.grb2f0950000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0950000)
+forecast_length_hour_str (096)
+out_filename (2506170000_gfs_global.grb2f0960000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0960000)
+forecast_length_hour_str (097)
+out_filename (2506170000_gfs_global.grb2f0970000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0970000)
+forecast_length_hour_str (098)
+out_filename (2506170000_gfs_global.grb2f0980000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0980000)
+forecast_length_hour_str (099)
+out_filename (2506170000_gfs_global.grb2f0990000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0990000)
+forecast_length_hour_str (100)
+out_filename (2506170000_gfs_global.grb2f1000000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f1000000)
+forecast_length_hour_str (101)
+out_filename (2506170000_gfs_global.grb2f1010000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f1010000)
+forecast_length_hour_str (102)
+out_filename (2506170000_gfs_global.grb2f1020000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f1020000)
+forecast_length_hour_str (103)
+out_filename (2506170000_gfs_global.grb2f1030000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f1030000)
+forecast_length_hour_str (104)
+out_filename (2506170000_gfs_global.grb2f1040000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f1040000)
+forecast_length_hour_str (105)
+out_filename (2506170000_gfs_global.grb2f1050000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f1050000)
+forecast_length_hour_str (106)
+out_filename (2506170000_gfs_global.grb2f1060000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f1060000)
+forecast_length_hour_str (107)
+out_filename (2506170000_gfs_global.grb2f1070000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f1070000)
+forecast_length_hour_str (108)
+out_filename (2506170000_gfs_global.grb2f1080000)
+1614553 2025-06-17 11:40:33,585 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f1080000 already exists. Skipping.
+1614553 2025-06-17 11:40:33,585 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f1090000 already exists. Skipping.
+1614553 2025-06-17 11:40:33,585 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f1100000 already exists. Skipping.
+1614553 2025-06-17 11:40:33,585 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f1110000 already exists. Skipping.
+1614553 2025-06-17 11:40:33,585 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f1120000 already exists. Skipping.
+1614553 2025-06-17 11:40:33,586 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f1130000 already exists. Skipping.
+1614553 2025-06-17 11:40:33,586 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f1140000 already exists. Skipping.
+1614553 2025-06-17 11:40:33,586 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f1150000 already exists. Skipping.
+1614553 2025-06-17 11:40:33,586 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f1160000 already exists. Skipping.
+1614553 2025-06-17 11:40:33,586 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f1170000 already exists. Skipping.
+1614553 2025-06-17 11:40:33,586 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f1180000 already exists. Skipping.
+1614553 2025-06-17 11:40:33,586 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f1190000 already exists. Skipping.
+1614553 2025-06-17 11:40:33,586 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f1200000 already exists. Skipping.
+1614553 2025-06-17 11:40:33,586 - carl-gfs-data-retrieval - INFO - Trying to retrieve https://nomads.ncep.noaa.gov/cgi-bin/filter_gfs_0p25_1hr.pl?dir=%2Fgfs.20250617%2F00%2Fatmos&file=gfs.t00z.pgrb2.0p25.f121&var_APCP=on&var_DPT=on&var_HCDC=on&var_LCDC=on&var_MCDC=on&var_TCDC=on&var_RH=on&var_TMP=on&var_UGRD=on&var_VGRD=on&all_lev=on&subregion=&toplat=-15&leftlon=24&rightlon=34&bottomlat=-23...
+1614553 2025-06-17 11:40:35,143 - carl-gfs-data-retrieval - ERROR - HTTP Error 404: Could not find https://nomads.ncep.noaa.gov/cgi-bin/filter_gfs_0p25_1hr.pl?dir=%2Fgfs.20250617%2F00%2Fatmos&file=gfs.t00z.pgrb2.0p25.f121&var_APCP=on&var_DPT=on&var_HCDC=on&var_LCDC=on&var_MCDC=on&var_TCDC=on&var_RH=on&var_TMP=on&var_UGRD=on&var_VGRD=on&all_lev=on&subregion=&toplat=-15&leftlon=24&rightlon=34&bottomlat=-23
+1614553 2025-06-17 11:40:35,146 - carl-gfs-data-retrieval - INFO - Trying to retrieve https://nomads.ncep.noaa.gov/cgi-bin/filter_gfs_0p25_1hr.pl?dir=%2Fgfs.20250617%2F00%2Fatmos&file=gfs.t00z.pgrb2.0p25.f122&var_APCP=on&var_DPT=on&var_HCDC=on&var_LCDC=on&var_MCDC=on&var_TCDC=on&var_RH=on&var_TMP=on&var_UGRD=on&var_VGRD=on&all_lev=on&subregion=&toplat=-15&leftlon=24&rightlon=34&bottomlat=-23...
+1614553 2025-06-17 11:40:36,488 - carl-gfs-data-retrieval - ERROR - HTTP Error 404: Could not find https://nomads.ncep.noaa.gov/cgi-bin/filter_gfs_0p25_1hr.pl?dir=%2Fgfs.20250617%2F00%2Fatmos&file=gfs.t00z.pgrb2.0p25.f122&var_APCP=on&var_DPT=on&var_HCDC=on&var_LCDC=on&var_MCDC=on&var_TCDC=on&var_RH=on&var_TMP=on&var_UGRD=on&var_VGRD=on&all_lev=on&subregion=&toplat=-15&leftlon=24&rightlon=34&bottomlat=-23
+1614553 2025-06-17 11:40:36,491 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f1230000 already exists. Skipping.
+1614553 2025-06-17 11:40:36,492 - carl-gfs-data-retrieval - INFO - Trying to retrieve https://nomads.ncep.noaa.gov/cgi-bin/filter_gfs_0p25_1hr.pl?dir=%2Fgfs.20250617%2F00%2Fatmos&file=gfs.t00z.pgrb2.0p25.f124&var_APCP=on&var_DPT=on&var_HCDC=on&var_LCDC=on&var_MCDC=on&var_TCDC=on&var_RH=on&var_TMP=on&var_UGRD=on&var_VGRD=on&all_lev=on&subregion=&toplat=-15&leftlon=24&rightlon=34&bottomlat=-23...
+1614553 2025-06-17 11:40:37,556 - carl-gfs-data-retrieval - ERROR - HTTP Error 404: Could not find https://nomads.ncep.noaa.gov/cgi-bin/filter_gfs_0p25_1hr.pl?dir=%2Fgfs.20250617%2F00%2Fatmos&file=gfs.t00z.pgrb2.0p25.f124&var_APCP=on&var_DPT=on&var_HCDC=on&var_LCDC=on&var_MCDC=on&var_TCDC=on&var_RH=on&var_TMP=on&var_UGRD=on&var_VGRD=on&all_lev=on&subregion=&toplat=-15&leftlon=24&rightlon=34&bottomlat=-23
+1614553 2025-06-17 11:40:37,558 - carl-gfs-data-retrieval - INFO - Trying to retrieve https://nomads.ncep.noaa.gov/cgi-bin/filter_gfs_0p25_1hr.pl?dir=%2Fgfs.20250617%2F00%2Fatmos&file=gfs.t00z.pgrb2.0p25.f125&var_APCP=on&var_DPT=on&var_HCDC=on&var_LCDC=on&var_MCDC=on&var_TCDC=on&var_RH=on&var_TMP=on&var_UGRD=on&var_VGRD=on&all_lev=on&subregion=&toplat=-15&leftlon=24&rightlon=34&bottomlat=-23...
+1614553 2025-06-17 11:40:42,455 - carl-gfs-data-retrieval - ERROR - HTTP Error 404: Could not find https://nomads.ncep.noaa.gov/cgi-bin/filter_gfs_0p25_1hr.pl?dir=%2Fgfs.20250617%2F00%2Fatmos&file=gfs.t00z.pgrb2.0p25.f125&var_APCP=on&var_DPT=on&var_HCDC=on&var_LCDC=on&var_MCDC=on&var_TCDC=on&var_RH=on&var_TMP=on&var_UGRD=on&var_VGRD=on&all_lev=on&subregion=&toplat=-15&leftlon=24&rightlon=34&bottomlat=-23
+1614553 2025-06-17 11:40:42,459 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f1260000 already exists. Skipping.
+1614553 2025-06-17 11:40:42,460 - carl-gfs-data-retrieval - INFO - Trying to retrieve https://nomads.ncep.noaa.gov/cgi-bin/filter_gfs_0p25_1hr.pl?dir=%2Fgfs.20250617%2F00%2Fatmos&file=gfs.t00z.pgrb2.0p25.f127&var_APCP=on&var_DPT=on&var_HCDC=on&var_LCDC=on&var_MCDC=on&var_TCDC=on&var_RH=on&var_TMP=on&var_UGRD=on&var_VGRD=on&all_lev=on&subregion=&toplat=-15&leftlon=24&rightlon=34&bottomlat=-23...
+1614553 2025-06-17 11:40:43,664 - carl-gfs-data-retrieval - ERROR - HTTP Error 404: Could not find https://nomads.ncep.noaa.gov/cgi-bin/filter_gfs_0p25_1hr.pl?dir=%2Fgfs.20250617%2F00%2Fatmos&file=gfs.t00z.pgrb2.0p25.f127&var_APCP=on&var_DPT=on&var_HCDC=on&var_LCDC=on&var_MCDC=on&var_TCDC=on&var_RH=on&var_TMP=on&var_UGRD=on&var_VGRD=on&all_lev=on&subregion=&toplat=-15&leftlon=24&rightlon=34&bottomlat=-23
+1614553 2025-06-17 11:40:43,667 - carl-gfs-data-retrieval - INFO - Trying to retrieve https://nomads.ncep.noaa.gov/cgi-bin/filter_gfs_0p25_1hr.pl?dir=%2Fgfs.20250617%2F00%2Fatmos&file=gfs.t00z.pgrb2.0p25.f128&var_APCP=on&var_DPT=on&var_HCDC=on&var_LCDC=on&var_MCDC=on&var_TCDC=on&var_RH=on&var_TMP=on&var_UGRD=on&var_VGRD=on&all_lev=on&subregion=&toplat=-15&leftlon=24&rightlon=34&bottomlat=-23...
+1614553 2025-06-17 11:40:48,376 - carl-gfs-data-retrieval - ERROR - HTTP Error 404: Could not find https://nomads.ncep.noaa.gov/cgi-bin/filter_gfs_0p25_1hr.pl?dir=%2Fgfs.20250617%2F00%2Fatmos&file=gfs.t00z.pgrb2.0p25.f128&var_APCP=on&var_DPT=on&var_HCDC=on&var_LCDC=on&var_MCDC=on&var_TCDC=on&var_RH=on&var_TMP=on&var_UGRD=on&var_VGRD=on&all_lev=on&subregion=&toplat=-15&leftlon=24&rightlon=34&bottomlat=-23
+1614553 2025-06-17 11:40:48,379 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f1290000 already exists. Skipping.
+1614553 2025-06-17 11:40:48,381 - carl-gfs-data-retrieval - INFO - Trying to retrieve https://nomads.ncep.noaa.gov/cgi-bin/filter_gfs_0p25_1hr.pl?dir=%2Fgfs.20250617%2F00%2Fatmos&file=gfs.t00z.pgrb2.0p25.f130&var_APCP=on&var_DPT=on&var_HCDC=on&var_LCDC=on&var_MCDC=on&var_TCDC=on&var_RH=on&var_TMP=on&var_UGRD=on&var_VGRD=on&all_lev=on&subregion=&toplat=-15&leftlon=24&rightlon=34&bottomlat=-23...
+1614553 2025-06-17 11:40:51,081 - carl-gfs-data-retrieval - ERROR - HTTP Error 404: Could not find https://nomads.ncep.noaa.gov/cgi-bin/filter_gfs_0p25_1hr.pl?dir=%2Fgfs.20250617%2F00%2Fatmos&file=gfs.t00z.pgrb2.0p25.f130&var_APCP=on&var_DPT=on&var_HCDC=on&var_LCDC=on&var_MCDC=on&var_TCDC=on&var_RH=on&var_TMP=on&var_UGRD=on&var_VGRD=on&all_lev=on&subregion=&toplat=-15&leftlon=24&rightlon=34&bottomlat=-23
+1614553 2025-06-17 11:40:51,084 - carl-gfs-data-retrieval - INFO - Trying to retrieve https://nomads.ncep.noaa.gov/cgi-bin/filter_gfs_0p25_1hr.pl?dir=%2Fgfs.20250617%2F00%2Fatmos&file=gfs.t00z.pgrb2.0p25.f131&var_APCP=on&var_DPT=on&var_HCDC=on&var_LCDC=on&var_MCDC=on&var_TCDC=on&var_RH=on&var_TMP=on&var_UGRD=on&var_VGRD=on&all_lev=on&subregion=&toplat=-15&leftlon=24&rightlon=34&bottomlat=-23...
+1614553 2025-06-17 11:40:58,764 - carl-gfs-data-retrieval - ERROR - HTTP Error 404: Could not find https://nomads.ncep.noaa.gov/cgi-bin/filter_gfs_0p25_1hr.pl?dir=%2Fgfs.20250617%2F00%2Fatmos&file=gfs.t00z.pgrb2.0p25.f131&var_APCP=on&var_DPT=on&var_HCDC=on&var_LCDC=on&var_MCDC=on&var_TCDC=on&var_RH=on&var_TMP=on&var_UGRD=on&var_VGRD=on&all_lev=on&subregion=&toplat=-15&leftlon=24&rightlon=34&bottomlat=-23
+1614553 2025-06-17 11:40:58,767 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f1320000 already exists. Skipping.
+1614553 2025-06-17 11:40:58,767 - carl-gfs-data-retrieval - INFO - Trying to retrieve https://nomads.ncep.noaa.gov/cgi-bin/filter_gfs_0p25_1hr.pl?dir=%2Fgfs.20250617%2F00%2Fatmos&file=gfs.t00z.pgrb2.0p25.f133&var_APCP=on&var_DPT=on&var_HCDC=on&var_LCDC=on&var_MCDC=on&var_TCDC=on&var_RH=on&var_TMP=on&var_UGRD=on&var_VGRD=on&all_lev=on&subregion=&toplat=-15&leftlon=24&rightlon=34&bottomlat=-23...
+1614553 2025-06-17 11:40:59,675 - carl-gfs-data-retrieval - ERROR - HTTP Error 404: Could not find https://nomads.ncep.noaa.gov/cgi-bin/filter_gfs_0p25_1hr.pl?dir=%2Fgfs.20250617%2F00%2Fatmos&file=gfs.t00z.pgrb2.0p25.f133&var_APCP=on&var_DPT=on&var_HCDC=on&var_LCDC=on&var_MCDC=on&var_TCDC=on&var_RH=on&var_TMP=on&var_UGRD=on&var_VGRD=on&all_lev=on&subregion=&toplat=-15&leftlon=24&rightlon=34&bottomlat=-23
+1614553 2025-06-17 11:40:59,678 - carl-gfs-data-retrieval - INFO - Trying to retrieve https://nomads.ncep.noaa.gov/cgi-bin/filter_gfs_0p25_1hr.pl?dir=%2Fgfs.20250617%2F00%2Fatmos&file=gfs.t00z.pgrb2.0p25.f134&var_APCP=on&var_DPT=on&var_HCDC=on&var_LCDC=on&var_MCDC=on&var_TCDC=on&var_RH=on&var_TMP=on&var_UGRD=on&var_VGRD=on&all_lev=on&subregion=&toplat=-15&leftlon=24&rightlon=34&bottomlat=-23...
+1614553 2025-06-17 11:41:00,815 - carl-gfs-data-retrieval - ERROR - HTTP Error 404: Could not find https://nomads.ncep.noaa.gov/cgi-bin/filter_gfs_0p25_1hr.pl?dir=%2Fgfs.20250617%2F00%2Fatmos&file=gfs.t00z.pgrb2.0p25.f134&var_APCP=on&var_DPT=on&var_HCDC=on&var_LCDC=on&var_MCDC=on&var_TCDC=on&var_RH=on&var_TMP=on&var_UGRD=on&var_VGRD=on&all_lev=on&subregion=&toplat=-15&leftlon=24&rightlon=34&bottomlat=-23
+1614553 2025-06-17 11:41:00,818 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f1350000 already exists. Skipping.
+1614553 2025-06-17 11:41:00,819 - carl-gfs-data-retrieval - INFO - Trying to retrieve https://nomads.ncep.noaa.gov/cgi-bin/filter_gfs_0p25_1hr.pl?dir=%2Fgfs.20250617%2F00%2Fatmos&file=gfs.t00z.pgrb2.0p25.f136&var_APCP=on&var_DPT=on&var_HCDC=on&var_LCDC=on&var_MCDC=on&var_TCDC=on&var_RH=on&var_TMP=on&var_UGRD=on&var_VGRD=on&all_lev=on&subregion=&toplat=-15&leftlon=24&rightlon=34&bottomlat=-23...
+1614553 2025-06-17 11:41:01,841 - carl-gfs-data-retrieval - ERROR - HTTP Error 404: Could not find https://nomads.ncep.noaa.gov/cgi-bin/filter_gfs_0p25_1hr.pl?dir=%2Fgfs.20250617%2F00%2Fatmos&file=gfs.t00z.pgrb2.0p25.f136&var_APCP=on&var_DPT=on&var_HCDC=on&var_LCDC=on&var_MCDC=on&var_TCDC=on&var_RH=on&var_TMP=on&var_UGRD=on&var_VGRD=on&all_lev=on&subregion=&toplat=-15&leftlon=24&rightlon=34&bottomlat=-23
+1614553 2025-06-17 11:41:01,844 - carl-gfs-data-retrieval - INFO - Trying to retrieve https://nomads.ncep.noaa.gov/cgi-bin/filter_gfs_0p25_1hr.pl?dir=%2Fgfs.20250617%2F00%2Fatmos&file=gfs.t00z.pgrb2.0p25.f137&var_APCP=on&var_DPT=on&var_HCDC=on&var_LCDC=on&var_MCDC=on&var_TCDC=on&var_RH=on&var_TMP=on&var_UGRD=on&var_VGRD=on&all_lev=on&subregion=&toplat=-15&leftlon=24&rightlon=34&bottomlat=-23...
+1614553 2025-06-17 11:41:03,751 - carl-gfs-data-retrieval - ERROR - HTTP Error 404: Could not find https://nomads.ncep.noaa.gov/cgi-bin/filter_gfs_0p25_1hr.pl?dir=%2Fgfs.20250617%2F00%2Fatmos&file=gfs.t00z.pgrb2.0p25.f137&var_APCP=on&var_DPT=on&var_HCDC=on&var_LCDC=on&var_MCDC=on&var_TCDC=on&var_RH=on&var_TMP=on&var_UGRD=on&var_VGRD=on&all_lev=on&subregion=&toplat=-15&leftlon=24&rightlon=34&bottomlat=-23
+1614553 2025-06-17 11:41:03,754 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f1380000 already exists. Skipping.
+1614553 2025-06-17 11:41:03,755 - carl-gfs-data-retrieval - INFO - Trying to retrieve https://nomads.ncep.noaa.gov/cgi-bin/filter_gfs_0p25_1hr.pl?dir=%2Fgfs.20250617%2F00%2Fatmos&file=gfs.t00z.pgrb2.0p25.f139&var_APCP=on&var_DPT=on&var_HCDC=on&var_LCDC=on&var_MCDC=on&var_TCDC=on&var_RH=on&var_TMP=on&var_UGRD=on&var_VGRD=on&all_lev=on&subregion=&toplat=-15&leftlon=24&rightlon=34&bottomlat=-23...
+1614553 2025-06-17 11:41:10,492 - carl-gfs-data-retrieval - ERROR - HTTP Error 404: Could not find https://nomads.ncep.noaa.gov/cgi-bin/filter_gfs_0p25_1hr.pl?dir=%2Fgfs.20250617%2F00%2Fatmos&file=gfs.t00z.pgrb2.0p25.f139&var_APCP=on&var_DPT=on&var_HCDC=on&var_LCDC=on&var_MCDC=on&var_TCDC=on&var_RH=on&var_TMP=on&var_UGRD=on&var_VGRD=on&all_lev=on&subregion=&toplat=-15&leftlon=24&rightlon=34&bottomlat=-23
+1614553 2025-06-17 11:41:10,494 - carl-gfs-data-retrieval - INFO - Trying to retrieve https://nomads.ncep.noaa.gov/cgi-bin/filter_gfs_0p25_1hr.pl?dir=%2Fgfs.20250617%2F00%2Fatmos&file=gfs.t00z.pgrb2.0p25.f140&var_APCP=on&var_DPT=on&var_HCDC=on&var_LCDC=on&var_MCDC=on&var_TCDC=on&var_RH=on&var_TMP=on&var_UGRD=on&var_VGRD=on&all_lev=on&subregion=&toplat=-15&leftlon=24&rightlon=34&bottomlat=-23...
+1614553 2025-06-17 11:41:20,942 - carl-gfs-data-retrieval - ERROR - HTTP Error 404: Could not find https://nomads.ncep.noaa.gov/cgi-bin/filter_gfs_0p25_1hr.pl?dir=%2Fgfs.20250617%2F00%2Fatmos&file=gfs.t00z.pgrb2.0p25.f140&var_APCP=on&var_DPT=on&var_HCDC=on&var_LCDC=on&var_MCDC=on&var_TCDC=on&var_RH=on&var_TMP=on&var_UGRD=on&var_VGRD=on&all_lev=on&subregion=&toplat=-15&leftlon=24&rightlon=34&bottomlat=-23
+1614553 2025-06-17 11:41:20,945 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f1410000 already exists. Skipping.
+1614553 2025-06-17 11:41:20,946 - carl-gfs-data-retrieval - INFO - Trying to retrieve https://nomads.ncep.noaa.gov/cgi-bin/filter_gfs_0p25_1hr.pl?dir=%2Fgfs.20250617%2F00%2Fatmos&file=gfs.t00z.pgrb2.0p25.f142&var_APCP=on&var_DPT=on&var_HCDC=on&var_LCDC=on&var_MCDC=on&var_TCDC=on&var_RH=on&var_TMP=on&var_UGRD=on&var_VGRD=on&all_lev=on&subregion=&toplat=-15&leftlon=24&rightlon=34&bottomlat=-23...
+1614553 2025-06-17 11:41:34,311 - carl-gfs-data-retrieval - ERROR - HTTP Error 404: Could not find https://nomads.ncep.noaa.gov/cgi-bin/filter_gfs_0p25_1hr.pl?dir=%2Fgfs.20250617%2F00%2Fatmos&file=gfs.t00z.pgrb2.0p25.f142&var_APCP=on&var_DPT=on&var_HCDC=on&var_LCDC=on&var_MCDC=on&var_TCDC=on&var_RH=on&var_TMP=on&var_UGRD=on&var_VGRD=on&all_lev=on&subregion=&toplat=-15&leftlon=24&rightlon=34&bottomlat=-23
+1614553 2025-06-17 11:41:34,314 - carl-gfs-data-retrieval - INFO - Trying to retrieve https://nomads.ncep.noaa.gov/cgi-bin/filter_gfs_0p25_1hr.pl?dir=%2Fgfs.20250617%2F00%2Fatmos&file=gfs.t00z.pgrb2.0p25.f143&var_APCP=on&var_DPT=on&var_HCDC=on&var_LCDC=on&var_MCDC=on&var_TCDC=on&var_RH=on&var_TMP=on&var_UGRD=on&var_VGRD=on&all_lev=on&subregion=&toplat=-15&leftlon=24&rightlon=34&bottomlat=-23...
+1614553 2025-06-17 11:41:35,904 - carl-gfs-data-retrieval - ERROR - HTTP Error 404: Could not find https://nomads.ncep.noaa.gov/cgi-bin/filter_gfs_0p25_1hr.pl?dir=%2Fgfs.20250617%2F00%2Fatmos&file=gfs.t00z.pgrb2.0p25.f143&var_APCP=on&var_DPT=on&var_HCDC=on&var_LCDC=on&var_MCDC=on&var_TCDC=on&var_RH=on&var_TMP=on&var_UGRD=on&var_VGRD=on&all_lev=on&subregion=&toplat=-15&leftlon=24&rightlon=34&bottomlat=-23
+1614553 2025-06-17 11:41:35,907 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f1440000 already exists. Skipping.
+1614553 2025-06-17 11:41:35,907 - carl-gfs-data-retrieval - INFO - Trying to retrieve https://nomads.ncep.noaa.gov/cgi-bin/filter_gfs_0p25_1hr.pl?dir=%2Fgfs.20250617%2F00%2Fatmos&file=gfs.t00z.pgrb2.0p25.f145&var_APCP=on&var_DPT=on&var_HCDC=on&var_LCDC=on&var_MCDC=on&var_TCDC=on&var_RH=on&var_TMP=on&var_UGRD=on&var_VGRD=on&all_lev=on&subregion=&toplat=-15&leftlon=24&rightlon=34&bottomlat=-23...
+1614553 2025-06-17 11:41:41,843 - carl-gfs-data-retrieval - ERROR - HTTP Error 404: Could not find https://nomads.ncep.noaa.gov/cgi-bin/filter_gfs_0p25_1hr.pl?dir=%2Fgfs.20250617%2F00%2Fatmos&file=gfs.t00z.pgrb2.0p25.f145&var_APCP=on&var_DPT=on&var_HCDC=on&var_LCDC=on&var_MCDC=on&var_TCDC=on&var_RH=on&var_TMP=on&var_UGRD=on&var_VGRD=on&all_lev=on&subregion=&toplat=-15&leftlon=24&rightlon=34&bottomlat=-23
+1614553 2025-06-17 11:41:41,846 - carl-gfs-data-retrieval - INFO - Trying to retrieve https://nomads.ncep.noaa.gov/cgi-bin/filter_gfs_0p25_1hr.pl?dir=%2Fgfs.20250617%2F00%2Fatmos&file=gfs.t00z.pgrb2.0p25.f146&var_APCP=on&var_DPT=on&var_HCDC=on&var_LCDC=on&var_MCDC=on&var_TCDC=on&var_RH=on&var_TMP=on&var_UGRD=on&var_VGRD=on&all_lev=on&subregion=&toplat=-15&leftlon=24&rightlon=34&bottomlat=-23...
+1614553 2025-06-17 11:41:42,704 - carl-gfs-data-retrieval - ERROR - HTTP Error 404: Could not find https://nomads.ncep.noaa.gov/cgi-bin/filter_gfs_0p25_1hr.pl?dir=%2Fgfs.20250617%2F00%2Fatmos&file=gfs.t00z.pgrb2.0p25.f146&var_APCP=on&var_DPT=on&var_HCDC=on&var_LCDC=on&var_MCDC=on&var_TCDC=on&var_RH=on&var_TMP=on&var_UGRD=on&var_VGRD=on&all_lev=on&subregion=&toplat=-15&leftlon=24&rightlon=34&bottomlat=-23
+1614553 2025-06-17 11:41:42,706 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f1470000 already exists. Skipping.
+1614553 2025-06-17 11:41:42,707 - carl-gfs-data-retrieval - INFO - Trying to retrieve https://nomads.ncep.noaa.gov/cgi-bin/filter_gfs_0p25_1hr.pl?dir=%2Fgfs.20250617%2F00%2Fatmos&file=gfs.t00z.pgrb2.0p25.f148&var_APCP=on&var_DPT=on&var_HCDC=on&var_LCDC=on&var_MCDC=on&var_TCDC=on&var_RH=on&var_TMP=on&var_UGRD=on&var_VGRD=on&all_lev=on&subregion=&toplat=-15&leftlon=24&rightlon=34&bottomlat=-23...
+1614553 2025-06-17 11:41:44,308 - carl-gfs-data-retrieval - ERROR - HTTP Error 404: Could not find https://nomads.ncep.noaa.gov/cgi-bin/filter_gfs_0p25_1hr.pl?dir=%2Fgfs.20250617%2F00%2Fatmos&file=gfs.t00z.pgrb2.0p25.f148&var_APCP=on&var_DPT=on&var_HCDC=on&var_LCDC=on&var_MCDC=on&var_TCDC=on&var_RH=on&var_TMP=on&var_UGRD=on&var_VGRD=on&all_lev=on&subregion=&toplat=-15&leftlon=24&rightlon=34&bottomlat=-23
+1614553 2025-06-17 11:41:44,310 - carl-gfs-data-retrieval - INFO - Trying to retrieve https://nomads.ncep.noaa.gov/cgi-bin/filter_gfs_0p25_1hr.pl?dir=%2Fgfs.20250617%2F00%2Fatmos&file=gfs.t00z.pgrb2.0p25.f149&var_APCP=on&var_DPT=on&var_HCDC=on&var_LCDC=on&var_MCDC=on&var_TCDC=on&var_RH=on&var_TMP=on&var_UGRD=on&var_VGRD=on&all_lev=on&subregion=&toplat=-15&leftlon=24&rightlon=34&bottomlat=-23...
+1614553 2025-06-17 11:41:55,830 - carl-gfs-data-retrieval - ERROR - HTTP Error 404: Could not find https://nomads.ncep.noaa.gov/cgi-bin/filter_gfs_0p25_1hr.pl?dir=%2Fgfs.20250617%2F00%2Fatmos&file=gfs.t00z.pgrb2.0p25.f149&var_APCP=on&var_DPT=on&var_HCDC=on&var_LCDC=on&var_MCDC=on&var_TCDC=on&var_RH=on&var_TMP=on&var_UGRD=on&var_VGRD=on&all_lev=on&subregion=&toplat=-15&leftlon=24&rightlon=34&bottomlat=-23
+1614553 2025-06-17 11:41:55,833 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f1500000 already exists. Skipping.
+1614553 2025-06-17 11:41:55,834 - carl-gfs-data-retrieval - INFO - Trying to retrieve https://nomads.ncep.noaa.gov/cgi-bin/filter_gfs_0p25_1hr.pl?dir=%2Fgfs.20250617%2F00%2Fatmos&file=gfs.t00z.pgrb2.0p25.f151&var_APCP=on&var_DPT=on&var_HCDC=on&var_LCDC=on&var_MCDC=on&var_TCDC=on&var_RH=on&var_TMP=on&var_UGRD=on&var_VGRD=on&all_lev=on&subregion=&toplat=-15&leftlon=24&rightlon=34&bottomlat=-23...
+1614553 2025-06-17 11:42:12,395 - carl-gfs-data-retrieval - ERROR - HTTP Error 404: Could not find https://nomads.ncep.noaa.gov/cgi-bin/filter_gfs_0p25_1hr.pl?dir=%2Fgfs.20250617%2F00%2Fatmos&file=gfs.t00z.pgrb2.0p25.f151&var_APCP=on&var_DPT=on&var_HCDC=on&var_LCDC=on&var_MCDC=on&var_TCDC=on&var_RH=on&var_TMP=on&var_UGRD=on&var_VGRD=on&all_lev=on&subregion=&toplat=-15&leftlon=24&rightlon=34&bottomlat=-23
+1614553 2025-06-17 11:42:12,397 - carl-gfs-data-retrieval - INFO - Trying to retrieve https://nomads.ncep.noaa.gov/cgi-bin/filter_gfs_0p25_1hr.pl?dir=%2Fgfs.20250617%2F00%2Fatmos&file=gfs.t00z.pgrb2.0p25.f152&var_APCP=on&var_DPT=on&var_HCDC=on&var_LCDC=on&var_MCDC=on&var_TCDC=on&var_RH=on&var_TMP=on&var_UGRD=on&var_VGRD=on&all_lev=on&subregion=&toplat=-15&leftlon=24&rightlon=34&bottomlat=-23...
+1614553 2025-06-17 11:42:14,518 - carl-gfs-data-retrieval - ERROR - HTTP Error 404: Could not find https://nomads.ncep.noaa.gov/cgi-bin/filter_gfs_0p25_1hr.pl?dir=%2Fgfs.20250617%2F00%2Fatmos&file=gfs.t00z.pgrb2.0p25.f152&var_APCP=on&var_DPT=on&var_HCDC=on&var_LCDC=on&var_MCDC=on&var_TCDC=on&var_RH=on&var_TMP=on&var_UGRD=on&var_VGRD=on&all_lev=on&subregion=&toplat=-15&leftlon=24&rightlon=34&bottomlat=-23
+1614553 2025-06-17 11:42:14,521 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f1530000 already exists. Skipping.
+1614553 2025-06-17 11:42:14,522 - carl-gfs-data-retrieval - INFO - Trying to retrieve https://nomads.ncep.noaa.gov/cgi-bin/filter_gfs_0p25_1hr.pl?dir=%2Fgfs.20250617%2F00%2Fatmos&file=gfs.t00z.pgrb2.0p25.f154&var_APCP=on&var_DPT=on&var_HCDC=on&var_LCDC=on&var_MCDC=on&var_TCDC=on&var_RH=on&var_TMP=on&var_UGRD=on&var_VGRD=on&all_lev=on&subregion=&toplat=-15&leftlon=24&rightlon=34&bottomlat=-23...
+1614553 2025-06-17 11:42:19,130 - carl-gfs-data-retrieval - ERROR - HTTP Error 404: Could not find https://nomads.ncep.noaa.gov/cgi-bin/filter_gfs_0p25_1hr.pl?dir=%2Fgfs.20250617%2F00%2Fatmos&file=gfs.t00z.pgrb2.0p25.f154&var_APCP=on&var_DPT=on&var_HCDC=on&var_LCDC=on&var_MCDC=on&var_TCDC=on&var_RH=on&var_TMP=on&var_UGRD=on&var_VGRD=on&all_lev=on&subregion=&toplat=-15&leftlon=24&rightlon=34&bottomlat=-23
+1614553 2025-06-17 11:42:19,133 - carl-gfs-data-retrieval - INFO - Trying to retrieve https://nomads.ncep.noaa.gov/cgi-bin/filter_gfs_0p25_1hr.pl?dir=%2Fgfs.20250617%2F00%2Fatmos&file=gfs.t00z.pgrb2.0p25.f155&var_APCP=on&var_DPT=on&var_HCDC=on&var_LCDC=on&var_MCDC=on&var_TCDC=on&var_RH=on&var_TMP=on&var_UGRD=on&var_VGRD=on&all_lev=on&subregion=&toplat=-15&leftlon=24&rightlon=34&bottomlat=-23...
+1614553 2025-06-17 11:42:20,420 - carl-gfs-data-retrieval - ERROR - HTTP Error 404: Could not find https://nomads.ncep.noaa.gov/cgi-bin/filter_gfs_0p25_1hr.pl?dir=%2Fgfs.20250617%2F00%2Fatmos&file=gfs.t00z.pgrb2.0p25.f155&var_APCP=on&var_DPT=on&var_HCDC=on&var_LCDC=on&var_MCDC=on&var_TCDC=on&var_RH=on&var_TMP=on&var_UGRD=on&var_VGRD=on&all_lev=on&subregion=&toplat=-15&leftlon=24&rightlon=34&bottomlat=-23
+1614553 2025-06-17 11:42:20,423 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f1560000 already exists. Skipping.
+1614553 2025-06-17 11:42:20,423 - carl-gfs-data-retrieval - INFO - Trying to retrieve https://nomads.ncep.noaa.gov/cgi-bin/filter_gfs_0p25_1hr.pl?dir=%2Fgfs.20250617%2F00%2Fatmos&file=gfs.t00z.pgrb2.0p25.f157&var_APCP=on&var_DPT=on&var_HCDC=on&var_LCDC=on&var_MCDC=on&var_TCDC=on&var_RH=on&var_TMP=on&var_UGRD=on&var_VGRD=on&all_lev=on&subregion=&toplat=-15&leftlon=24&rightlon=34&bottomlat=-23...
+1614553 2025-06-17 11:42:31,911 - carl-gfs-data-retrieval - ERROR - HTTP Error 404: Could not find https://nomads.ncep.noaa.gov/cgi-bin/filter_gfs_0p25_1hr.pl?dir=%2Fgfs.20250617%2F00%2Fatmos&file=gfs.t00z.pgrb2.0p25.f157&var_APCP=on&var_DPT=on&var_HCDC=on&var_LCDC=on&var_MCDC=on&var_TCDC=on&var_RH=on&var_TMP=on&var_UGRD=on&var_VGRD=on&all_lev=on&subregion=&toplat=-15&leftlon=24&rightlon=34&bottomlat=-23
+1614553 2025-06-17 11:42:31,914 - carl-gfs-data-retrieval - INFO - Trying to retrieve https://nomads.ncep.noaa.gov/cgi-bin/filter_gfs_0p25_1hr.pl?dir=%2Fgfs.20250617%2F00%2Fatmos&file=gfs.t00z.pgrb2.0p25.f158&var_APCP=on&var_DPT=on&var_HCDC=on&var_LCDC=on&var_MCDC=on&var_TCDC=on&var_RH=on&var_TMP=on&var_UGRD=on&var_VGRD=on&all_lev=on&subregion=&toplat=-15&leftlon=24&rightlon=34&bottomlat=-23...
+1614553 2025-06-17 11:42:49,838 - carl-gfs-data-retrieval - ERROR - HTTP Error 404: Could not find https://nomads.ncep.noaa.gov/cgi-bin/filter_gfs_0p25_1hr.pl?dir=%2Fgfs.20250617%2F00%2Fatmos&file=gfs.t00z.pgrb2.0p25.f158&var_APCP=on&var_DPT=on&var_HCDC=on&var_LCDC=on&var_MCDC=on&var_TCDC=on&var_RH=on&var_TMP=on&var_UGRD=on&var_VGRD=on&all_lev=on&subregion=&toplat=-15&leftlon=24&rightlon=34&bottomlat=-23
+1614553 2025-06-17 11:42:49,840 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f1590000 already exists. Skipping.
+1614553 2025-06-17 11:42:49,842 - carl-gfs-data-retrieval - INFO - Trying to retrieve https://nomads.ncep.noaa.gov/cgi-bin/filter_gfs_0p25_1hr.pl?dir=%2Fgfs.20250617%2F00%2Fatmos&file=gfs.t00z.pgrb2.0p25.f160&var_APCP=on&var_DPT=on&var_HCDC=on&var_LCDC=on&var_MCDC=on&var_TCDC=on&var_RH=on&var_TMP=on&var_UGRD=on&var_VGRD=on&all_lev=on&subregion=&toplat=-15&leftlon=24&rightlon=34&bottomlat=-23...
+1614553 2025-06-17 11:43:03,076 - carl-gfs-data-retrieval - ERROR - HTTP Error 404: Could not find https://nomads.ncep.noaa.gov/cgi-bin/filter_gfs_0p25_1hr.pl?dir=%2Fgfs.20250617%2F00%2Fatmos&file=gfs.t00z.pgrb2.0p25.f160&var_APCP=on&var_DPT=on&var_HCDC=on&var_LCDC=on&var_MCDC=on&var_TCDC=on&var_RH=on&var_TMP=on&var_UGRD=on&var_VGRD=on&all_lev=on&subregion=&toplat=-15&leftlon=24&rightlon=34&bottomlat=-23
+1614553 2025-06-17 11:43:03,079 - carl-gfs-data-retrieval - INFO - Trying to retrieve https://nomads.ncep.noaa.gov/cgi-bin/filter_gfs_0p25_1hr.pl?dir=%2Fgfs.20250617%2F00%2Fatmos&file=gfs.t00z.pgrb2.0p25.f161&var_APCP=on&var_DPT=on&var_HCDC=on&var_LCDC=on&var_MCDC=on&var_TCDC=on&var_RH=on&var_TMP=on&var_UGRD=on&var_VGRD=on&all_lev=on&subregion=&toplat=-15&leftlon=24&rightlon=34&bottomlat=-23...
+1614553 2025-06-17 11:43:17,617 - carl-gfs-data-retrieval - ERROR - HTTP Error 404: Could not find https://nomads.ncep.noaa.gov/cgi-bin/filter_gfs_0p25_1hr.pl?dir=%2Fgfs.20250617%2F00%2Fatmos&file=gfs.t00z.pgrb2.0p25.f161&var_APCP=on&var_DPT=on&var_HCDC=on&var_LCDC=on&var_MCDC=on&var_TCDC=on&var_RH=on&var_TMP=on&var_UGRD=on&var_VGRD=on&all_lev=on&subregion=&toplat=-15&leftlon=24&rightlon=34&bottomlat=-23
+1614553 2025-06-17 11:43:17,620 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f1620000 already exists. Skipping.
+1614553 2025-06-17 11:43:17,621 - carl-gfs-data-retrieval - INFO - Trying to retrieve https://nomads.ncep.noaa.gov/cgi-bin/filter_gfs_0p25_1hr.pl?dir=%2Fgfs.20250617%2F00%2Fatmos&file=gfs.t00z.pgrb2.0p25.f163&var_APCP=on&var_DPT=on&var_HCDC=on&var_LCDC=on&var_MCDC=on&var_TCDC=on&var_RH=on&var_TMP=on&var_UGRD=on&var_VGRD=on&all_lev=on&subregion=&toplat=-15&leftlon=24&rightlon=34&bottomlat=-23...
+1614553 2025-06-17 11:43:26,743 - carl-gfs-data-retrieval - ERROR - HTTP Error 404: Could not find https://nomads.ncep.noaa.gov/cgi-bin/filter_gfs_0p25_1hr.pl?dir=%2Fgfs.20250617%2F00%2Fatmos&file=gfs.t00z.pgrb2.0p25.f163&var_APCP=on&var_DPT=on&var_HCDC=on&var_LCDC=on&var_MCDC=on&var_TCDC=on&var_RH=on&var_TMP=on&var_UGRD=on&var_VGRD=on&all_lev=on&subregion=&toplat=-15&leftlon=24&rightlon=34&bottomlat=-23
+output_path (./local_outdata/2506170000_gfs_global.grb2f1080000)
+forecast_length_hour_str (109)
+out_filename (2506170000_gfs_global.grb2f1090000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f1090000)
+forecast_length_hour_str (110)
+out_filename (2506170000_gfs_global.grb2f1100000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f1100000)
+forecast_length_hour_str (111)
+out_filename (2506170000_gfs_global.grb2f1110000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f1110000)
+forecast_length_hour_str (112)
+out_filename (2506170000_gfs_global.grb2f1120000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f1120000)
+forecast_length_hour_str (113)
+out_filename (2506170000_gfs_global.grb2f1130000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f1130000)
+forecast_length_hour_str (114)
+out_filename (2506170000_gfs_global.grb2f1140000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f1140000)
+forecast_length_hour_str (115)
+out_filename (2506170000_gfs_global.grb2f1150000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f1150000)
+forecast_length_hour_str (116)
+out_filename (2506170000_gfs_global.grb2f1160000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f1160000)
+forecast_length_hour_str (117)
+out_filename (2506170000_gfs_global.grb2f1170000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f1170000)
+forecast_length_hour_str (118)
+out_filename (2506170000_gfs_global.grb2f1180000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f1180000)
+forecast_length_hour_str (119)
+out_filename (2506170000_gfs_global.grb2f1190000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f1190000)
+forecast_length_hour_str (120)
+out_filename (2506170000_gfs_global.grb2f1200000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f1200000)
+forecast_length_hour_str (121)
+out_filename (2506170000_gfs_global.grb2f1210000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f1210000)
+forecast_length_hour_str (122)
+out_filename (2506170000_gfs_global.grb2f1220000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f1220000)
+forecast_length_hour_str (123)
+out_filename (2506170000_gfs_global.grb2f1230000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f1230000)
+forecast_length_hour_str (124)
+out_filename (2506170000_gfs_global.grb2f1240000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f1240000)
+forecast_length_hour_str (125)
+out_filename (2506170000_gfs_global.grb2f1250000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f1250000)
+forecast_length_hour_str (126)
+out_filename (2506170000_gfs_global.grb2f1260000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f1260000)
+forecast_length_hour_str (127)
+out_filename (2506170000_gfs_global.grb2f1270000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f1270000)
+forecast_length_hour_str (128)
+out_filename (2506170000_gfs_global.grb2f1280000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f1280000)
+forecast_length_hour_str (129)
+out_filename (2506170000_gfs_global.grb2f1290000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f1290000)
+forecast_length_hour_str (130)
+out_filename (2506170000_gfs_global.grb2f1300000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f1300000)
+forecast_length_hour_str (131)
+out_filename (2506170000_gfs_global.grb2f1310000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f1310000)
+forecast_length_hour_str (132)
+out_filename (2506170000_gfs_global.grb2f1320000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f1320000)
+forecast_length_hour_str (133)
+out_filename (2506170000_gfs_global.grb2f1330000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f1330000)
+forecast_length_hour_str (134)
+out_filename (2506170000_gfs_global.grb2f1340000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f1340000)
+forecast_length_hour_str (135)
+out_filename (2506170000_gfs_global.grb2f1350000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f1350000)
+forecast_length_hour_str (136)
+out_filename (2506170000_gfs_global.grb2f1360000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f1360000)
+forecast_length_hour_str (137)
+out_filename (2506170000_gfs_global.grb2f1370000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f1370000)
+forecast_length_hour_str (138)
+out_filename (2506170000_gfs_global.grb2f1380000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f1380000)
+forecast_length_hour_str (139)
+out_filename (2506170000_gfs_global.grb2f1390000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f1390000)
+forecast_length_hour_str (140)
+out_filename (2506170000_gfs_global.grb2f1400000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f1400000)
+forecast_length_hour_str (141)
+out_filename (2506170000_gfs_global.grb2f1410000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f1410000)
+forecast_length_hour_str (142)
+out_filename (2506170000_gfs_global.grb2f1420000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f1420000)
+forecast_length_hour_str (143)
+out_filename (2506170000_gfs_global.grb2f1430000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f1430000)
+forecast_length_hour_str (144)
+out_filename (2506170000_gfs_global.grb2f1440000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f1440000)
+forecast_length_hour_str (145)
+out_filename (2506170000_gfs_global.grb2f1450000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f1450000)
+forecast_length_hour_str (146)
+out_filename (2506170000_gfs_global.grb2f1460000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f1460000)
+forecast_length_hour_str (147)
+out_filename (2506170000_gfs_global.grb2f1470000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f1470000)
+forecast_length_hour_str (148)
+out_filename (2506170000_gfs_global.grb2f1480000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f1480000)
+forecast_length_hour_str (149)
+out_filename (2506170000_gfs_global.grb2f1490000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f1490000)
+forecast_length_hour_str (150)
+out_filename (2506170000_gfs_global.grb2f1500000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f1500000)
+forecast_length_hour_str (151)
+out_filename (2506170000_gfs_global.grb2f1510000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f1510000)
+forecast_length_hour_str (152)
+out_filename (2506170000_gfs_global.grb2f1520000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f1520000)
+forecast_length_hour_str (153)
+out_filename (2506170000_gfs_global.grb2f1530000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f1530000)
+forecast_length_hour_str (154)
+out_filename (2506170000_gfs_global.grb2f1540000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f1540000)
+forecast_length_hour_str (155)
+out_filename (2506170000_gfs_global.grb2f1550000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f1550000)
+forecast_length_hour_str (156)
+out_filename (2506170000_gfs_global.grb2f1560000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f1560000)
+forecast_length_hour_str (157)
+out_filename (2506170000_gfs_global.grb2f1570000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f1570000)
+forecast_length_hour_str (158)
+out_filename (2506170000_gfs_global.grb2f1580000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f1580000)
+forecast_length_hour_str (159)
+out_filename (2506170000_gfs_global.grb2f1590000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f1590000)
+forecast_length_hour_str (160)
+out_filename (2506170000_gfs_global.grb2f1600000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f1600000)
+forecast_length_hour_str (161)
+out_filename (2506170000_gfs_global.grb2f1610000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f1610000)
+forecast_length_hour_str (162)
+out_filename (2506170000_gfs_global.grb2f1620000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f1620000)
+forecast_length_hour_str (163)
+out_filename (2506170000_gfs_global.grb2f1630000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f1630000)
+forecast_length_hour_str (164)
+out_filename (2506170000_gfs_global.grb2f1640000)
+1614553 2025-06-17 11:43:26,747 - carl-gfs-data-retrieval - INFO - Trying to retrieve https://nomads.ncep.noaa.gov/cgi-bin/filter_gfs_0p25_1hr.pl?dir=%2Fgfs.20250617%2F00%2Fatmos&file=gfs.t00z.pgrb2.0p25.f164&var_APCP=on&var_DPT=on&var_HCDC=on&var_LCDC=on&var_MCDC=on&var_TCDC=on&var_RH=on&var_TMP=on&var_UGRD=on&var_VGRD=on&all_lev=on&subregion=&toplat=-15&leftlon=24&rightlon=34&bottomlat=-23...
+1614553 2025-06-17 11:43:30,654 - carl-gfs-data-retrieval - ERROR - HTTP Error 404: Could not find https://nomads.ncep.noaa.gov/cgi-bin/filter_gfs_0p25_1hr.pl?dir=%2Fgfs.20250617%2F00%2Fatmos&file=gfs.t00z.pgrb2.0p25.f164&var_APCP=on&var_DPT=on&var_HCDC=on&var_LCDC=on&var_MCDC=on&var_TCDC=on&var_RH=on&var_TMP=on&var_UGRD=on&var_VGRD=on&all_lev=on&subregion=&toplat=-15&leftlon=24&rightlon=34&bottomlat=-23
+1614553 2025-06-17 11:43:30,656 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f1650000 already exists. Skipping.
+1614553 2025-06-17 11:43:30,657 - carl-gfs-data-retrieval - INFO - Trying to retrieve https://nomads.ncep.noaa.gov/cgi-bin/filter_gfs_0p25_1hr.pl?dir=%2Fgfs.20250617%2F00%2Fatmos&file=gfs.t00z.pgrb2.0p25.f166&var_APCP=on&var_DPT=on&var_HCDC=on&var_LCDC=on&var_MCDC=on&var_TCDC=on&var_RH=on&var_TMP=on&var_UGRD=on&var_VGRD=on&all_lev=on&subregion=&toplat=-15&leftlon=24&rightlon=34&bottomlat=-23...
+output_path (./local_outdata/2506170000_gfs_global.grb2f1640000)
+forecast_length_hour_str (165)
+out_filename (2506170000_gfs_global.grb2f1650000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f1650000)
+forecast_length_hour_str (166)
+out_filename (2506170000_gfs_global.grb2f1660000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f1660000)
+Traceback (most recent call last):
+  File "/home/wrf/nons/gfs-retrieval/retrieve_gfs_data3.py", line 100, in <module>
+    main()
+  File "/home/wrf/nons/gfs-retrieval/retrieve_gfs_data3.py", line 82, in main
+    urllib.request.urlretrieve(retrieve_data_url, output_path)
+  File "/home/wrf/miniconda3/lib/python3.9/urllib/request.py", line 239, in urlretrieve
+    with contextlib.closing(urlopen(url, data)) as fp:
+  File "/home/wrf/miniconda3/lib/python3.9/urllib/request.py", line 214, in urlopen
+    return opener.open(url, data, timeout)
+  File "/home/wrf/miniconda3/lib/python3.9/urllib/request.py", line 517, in open
+    response = self._open(req, data)
+  File "/home/wrf/miniconda3/lib/python3.9/urllib/request.py", line 534, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+  File "/home/wrf/miniconda3/lib/python3.9/urllib/request.py", line 494, in _call_chain
+    result = func(*args)
+  File "/home/wrf/miniconda3/lib/python3.9/urllib/request.py", line 1389, in https_open
+    return self.do_open(http.client.HTTPSConnection, req,
+  File "/home/wrf/miniconda3/lib/python3.9/urllib/request.py", line 1350, in do_open
+    r = h.getresponse()
+  File "/home/wrf/miniconda3/lib/python3.9/http/client.py", line 1377, in getresponse
+    response.begin()
+  File "/home/wrf/miniconda3/lib/python3.9/http/client.py", line 320, in begin
+    version, status, reason = self._read_status()
+  File "/home/wrf/miniconda3/lib/python3.9/http/client.py", line 289, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+http.client.RemoteDisconnected: Remote end closed connection without response
+Error: Failed to retrieve GFS data
+auto_zimbabwe_local_am2.bash failed at Tue Jun 17 11:43:53 AM CAT 2025. Retrying in 60 seconds...
+Time taken: 00:03:28
+Attempt 2 of 100: Running auto_zimbabwe_local_am2.bash at Tue Jun 17 11:44:53 AM CAT 2025...
+Script started at: Tue Jun 17 11:44:53 AM CAT 2025
+Log file: /home/wrf/nons/gfs-retrieval/logs/auto_production_20250617114453.log
+Old log files cleaned.
+Production started: 20250617 to 20250703
+Date for GFS retrieval: 2506170000
+Retrieving GFS data...
+Current directory: /home/wrf/nons/gfs-retrieval
+Virtual environment activated.
+Deleted data from local_outdata.
+1616387 2025-06-17 11:44:54,054 - carl-gfs-data-retrieval - INFO - Trying with https://nomads.ncep.noaa.gov/pub/data/nccf/com/gfs/prod/gfs.20250617/00/...
+1616387 2025-06-17 11:45:01,725 - carl-gfs-data-retrieval - INFO - https://nomads.ncep.noaa.gov/pub/data/nccf/com/gfs/prod/gfs.20250617/00/ seems valid. Will continue
+1616387 2025-06-17 11:45:01,726 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0000000 already exists. Skipping.
+1616387 2025-06-17 11:45:01,726 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0010000 already exists. Skipping.
+1616387 2025-06-17 11:45:01,726 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0020000 already exists. Skipping.
+1616387 2025-06-17 11:45:01,726 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0030000 already exists. Skipping.
+1616387 2025-06-17 11:45:01,727 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0040000 already exists. Skipping.
+1616387 2025-06-17 11:45:01,727 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0050000 already exists. Skipping.
+1616387 2025-06-17 11:45:01,727 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0060000 already exists. Skipping.
+1616387 2025-06-17 11:45:01,727 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0070000 already exists. Skipping.
+1616387 2025-06-17 11:45:01,727 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0080000 already exists. Skipping.
+1616387 2025-06-17 11:45:01,727 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0090000 already exists. Skipping.
+1616387 2025-06-17 11:45:01,728 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0100000 already exists. Skipping.
+1616387 2025-06-17 11:45:01,728 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0110000 already exists. Skipping.
+1616387 2025-06-17 11:45:01,728 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0120000 already exists. Skipping.
+1616387 2025-06-17 11:45:01,728 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0130000 already exists. Skipping.
+1616387 2025-06-17 11:45:01,728 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0140000 already exists. Skipping.
+1616387 2025-06-17 11:45:01,728 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0150000 already exists. Skipping.
+1616387 2025-06-17 11:45:01,729 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0160000 already exists. Skipping.
+1616387 2025-06-17 11:45:01,729 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0170000 already exists. Skipping.
+1616387 2025-06-17 11:45:01,729 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0180000 already exists. Skipping.
+1616387 2025-06-17 11:45:01,729 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0190000 already exists. Skipping.
+1616387 2025-06-17 11:45:01,729 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0200000 already exists. Skipping.
+1616387 2025-06-17 11:45:01,729 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0210000 already exists. Skipping.
+1616387 2025-06-17 11:45:01,730 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0220000 already exists. Skipping.
+1616387 2025-06-17 11:45:01,730 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0230000 already exists. Skipping.
+1616387 2025-06-17 11:45:01,730 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0240000 already exists. Skipping.
+1616387 2025-06-17 11:45:01,730 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0250000 already exists. Skipping.
+1616387 2025-06-17 11:45:01,730 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0260000 already exists. Skipping.
+1616387 2025-06-17 11:45:01,730 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0270000 already exists. Skipping.
+1616387 2025-06-17 11:45:01,731 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0280000 already exists. Skipping.
+1616387 2025-06-17 11:45:01,731 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0290000 already exists. Skipping.
+1616387 2025-06-17 11:45:01,731 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0300000 already exists. Skipping.
+1616387 2025-06-17 11:45:01,731 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0310000 already exists. Skipping.
+1616387 2025-06-17 11:45:01,731 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0320000 already exists. Skipping.
+1616387 2025-06-17 11:45:01,731 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0330000 already exists. Skipping.
+1616387 2025-06-17 11:45:01,731 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0340000 already exists. Skipping.
+1616387 2025-06-17 11:45:01,731 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0350000 already exists. Skipping.
+1616387 2025-06-17 11:45:01,731 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0360000 already exists. Skipping.
+1616387 2025-06-17 11:45:01,731 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0370000 already exists. Skipping.
+1616387 2025-06-17 11:45:01,732 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0380000 already exists. Skipping.
+1616387 2025-06-17 11:45:01,732 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0390000 already exists. Skipping.
+1616387 2025-06-17 11:45:01,732 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0400000 already exists. Skipping.
+1616387 2025-06-17 11:45:01,732 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0410000 already exists. Skipping.
+1616387 2025-06-17 11:45:01,732 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0420000 already exists. Skipping.
+1616387 2025-06-17 11:45:01,732 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0430000 already exists. Skipping.
+1616387 2025-06-17 11:45:01,732 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0440000 already exists. Skipping.
+1616387 2025-06-17 11:45:01,732 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0450000 already exists. Skipping.
+1616387 2025-06-17 11:45:01,732 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0460000 already exists. Skipping.
+1616387 2025-06-17 11:45:01,732 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0470000 already exists. Skipping.
+1616387 2025-06-17 11:45:01,732 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0480000 already exists. Skipping.
+1616387 2025-06-17 11:45:01,732 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0490000 already exists. Skipping.
+1616387 2025-06-17 11:45:01,733 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0500000 already exists. Skipping.
+1616387 2025-06-17 11:45:01,733 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0510000 already exists. Skipping.
+DEBUG: Loaded config_json = {'common': {'domainURL': 'https://nomads.ncep.noaa.gov/pub/data/nccf/com/gfs/prod/', 'outdataPath': './local_outdata/', 'fileSuffix': '.grib2', 'maxForecastLength': 384}}
+forecast_cycle_date (2025-06-17 00:44:54.054125)
+forecast_cycle_URL_date_string (20250617/00/)
+parent_URL (https://nomads.ncep.noaa.gov/pub/data/nccf/com/gfs/prod/gfs.20250617/00/)
+forecast_cycle_date_str_in (20250617)
+forecast_cycle_date_str_out (250617)
+forecast_cycle_hour_str (00)
+forecast_length_hour_str (000)
+out_filename (2506170000_gfs_global.grb2f0000000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0000000)
+forecast_length_hour_str (001)
+out_filename (2506170000_gfs_global.grb2f0010000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0010000)
+forecast_length_hour_str (002)
+out_filename (2506170000_gfs_global.grb2f0020000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0020000)
+forecast_length_hour_str (003)
+out_filename (2506170000_gfs_global.grb2f0030000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0030000)
+forecast_length_hour_str (004)
+out_filename (2506170000_gfs_global.grb2f0040000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0040000)
+forecast_length_hour_str (005)
+out_filename (2506170000_gfs_global.grb2f0050000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0050000)
+forecast_length_hour_str (006)
+out_filename (2506170000_gfs_global.grb2f0060000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0060000)
+forecast_length_hour_str (007)
+out_filename (2506170000_gfs_global.grb2f0070000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0070000)
+forecast_length_hour_str (008)
+out_filename (2506170000_gfs_global.grb2f0080000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0080000)
+forecast_length_hour_str (009)
+out_filename (2506170000_gfs_global.grb2f0090000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0090000)
+forecast_length_hour_str (010)
+out_filename (2506170000_gfs_global.grb2f0100000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0100000)
+forecast_length_hour_str (011)
+out_filename (2506170000_gfs_global.grb2f0110000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0110000)
+forecast_length_hour_str (012)
+out_filename (2506170000_gfs_global.grb2f0120000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0120000)
+forecast_length_hour_str (013)
+out_filename (2506170000_gfs_global.grb2f0130000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0130000)
+forecast_length_hour_str (014)
+out_filename (2506170000_gfs_global.grb2f0140000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0140000)
+forecast_length_hour_str (015)
+out_filename (2506170000_gfs_global.grb2f0150000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0150000)
+forecast_length_hour_str (016)
+out_filename (2506170000_gfs_global.grb2f0160000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0160000)
+forecast_length_hour_str (017)
+out_filename (2506170000_gfs_global.grb2f0170000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0170000)
+forecast_length_hour_str (018)
+out_filename (2506170000_gfs_global.grb2f0180000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0180000)
+forecast_length_hour_str (019)
+out_filename (2506170000_gfs_global.grb2f0190000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0190000)
+forecast_length_hour_str (020)
+out_filename (2506170000_gfs_global.grb2f0200000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0200000)
+forecast_length_hour_str (021)
+out_filename (2506170000_gfs_global.grb2f0210000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0210000)
+forecast_length_hour_str (022)
+out_filename (2506170000_gfs_global.grb2f0220000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0220000)
+forecast_length_hour_str (023)
+out_filename (2506170000_gfs_global.grb2f0230000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0230000)
+forecast_length_hour_str (024)
+out_filename (2506170000_gfs_global.grb2f0240000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0240000)
+forecast_length_hour_str (025)
+out_filename (2506170000_gfs_global.grb2f0250000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0250000)
+forecast_length_hour_str (026)
+out_filename (2506170000_gfs_global.grb2f0260000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0260000)
+forecast_length_hour_str (027)
+out_filename (2506170000_gfs_global.grb2f0270000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0270000)
+forecast_length_hour_str (028)
+out_filename (2506170000_gfs_global.grb2f0280000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0280000)
+forecast_length_hour_str (029)
+out_filename (2506170000_gfs_global.grb2f0290000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0290000)
+forecast_length_hour_str (030)
+out_filename (2506170000_gfs_global.grb2f0300000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0300000)
+forecast_length_hour_str (031)
+out_filename (2506170000_gfs_global.grb2f0310000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0310000)
+forecast_length_hour_str (032)
+out_filename (2506170000_gfs_global.grb2f0320000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0320000)
+forecast_length_hour_str (033)
+out_filename (2506170000_gfs_global.grb2f0330000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0330000)
+forecast_length_hour_str (034)
+out_filename (2506170000_gfs_global.grb2f0340000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0340000)
+forecast_length_hour_str (035)
+out_filename (2506170000_gfs_global.grb2f0350000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0350000)
+forecast_length_hour_str (036)
+out_filename (2506170000_gfs_global.grb2f0360000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0360000)
+forecast_length_hour_str (037)
+out_filename (2506170000_gfs_global.grb2f0370000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0370000)
+forecast_length_hour_str (038)
+out_filename (2506170000_gfs_global.grb2f0380000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0380000)
+forecast_length_hour_str (039)
+out_filename (2506170000_gfs_global.grb2f0390000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0390000)
+forecast_length_hour_str (040)
+out_filename (2506170000_gfs_global.grb2f0400000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0400000)
+forecast_length_hour_str (041)
+out_filename (2506170000_gfs_global.grb2f0410000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0410000)
+forecast_length_hour_str (042)
+out_filename (2506170000_gfs_global.grb2f0420000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0420000)
+forecast_length_hour_str (043)
+out_filename (2506170000_gfs_global.grb2f0430000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0430000)
+forecast_length_hour_str (044)
+out_filename (2506170000_gfs_global.grb2f0440000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0440000)
+forecast_length_hour_str (045)
+out_filename (2506170000_gfs_global.grb2f0450000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0450000)
+forecast_length_hour_str (046)
+out_filename (2506170000_gfs_global.grb2f0460000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0460000)
+forecast_length_hour_str (047)
+out_filename (2506170000_gfs_global.grb2f0470000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0470000)
+forecast_length_hour_str (048)
+out_filename (2506170000_gfs_global.grb2f0480000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0480000)
+forecast_length_hour_str (049)
+out_filename (2506170000_gfs_global.grb2f0490000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0490000)
+forecast_length_hour_str (050)
+out_filename (2506170000_gfs_global.grb2f0500000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0500000)
+forecast_length_hour_str (051)
+out_filename (2506170000_gfs_global.grb2f0510000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0510000)
+forecast_length_hour_str (052)
+out_filename (2506170000_gfs_global.grb2f0520000)
+1616387 2025-06-17 11:45:01,733 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0520000 already exists. Skipping.
+1616387 2025-06-17 11:45:01,733 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0530000 already exists. Skipping.
+1616387 2025-06-17 11:45:01,733 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0540000 already exists. Skipping.
+1616387 2025-06-17 11:45:01,733 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0550000 already exists. Skipping.
+1616387 2025-06-17 11:45:01,733 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0560000 already exists. Skipping.
+1616387 2025-06-17 11:45:01,733 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0570000 already exists. Skipping.
+1616387 2025-06-17 11:45:01,733 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0580000 already exists. Skipping.
+1616387 2025-06-17 11:45:01,733 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0590000 already exists. Skipping.
+1616387 2025-06-17 11:45:01,733 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0600000 already exists. Skipping.
+1616387 2025-06-17 11:45:01,733 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0610000 already exists. Skipping.
+1616387 2025-06-17 11:45:01,734 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0620000 already exists. Skipping.
+1616387 2025-06-17 11:45:01,734 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0630000 already exists. Skipping.
+1616387 2025-06-17 11:45:01,734 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0640000 already exists. Skipping.
+1616387 2025-06-17 11:45:01,734 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0650000 already exists. Skipping.
+1616387 2025-06-17 11:45:01,734 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0660000 already exists. Skipping.
+1616387 2025-06-17 11:45:01,734 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0670000 already exists. Skipping.
+1616387 2025-06-17 11:45:01,734 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0680000 already exists. Skipping.
+1616387 2025-06-17 11:45:01,734 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0690000 already exists. Skipping.
+1616387 2025-06-17 11:45:01,734 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0700000 already exists. Skipping.
+1616387 2025-06-17 11:45:01,734 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0710000 already exists. Skipping.
+1616387 2025-06-17 11:45:01,734 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0720000 already exists. Skipping.
+1616387 2025-06-17 11:45:01,734 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0730000 already exists. Skipping.
+1616387 2025-06-17 11:45:01,735 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0740000 already exists. Skipping.
+1616387 2025-06-17 11:45:01,735 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0750000 already exists. Skipping.
+1616387 2025-06-17 11:45:01,735 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0760000 already exists. Skipping.
+1616387 2025-06-17 11:45:01,735 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0770000 already exists. Skipping.
+1616387 2025-06-17 11:45:01,735 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0780000 already exists. Skipping.
+1616387 2025-06-17 11:45:01,735 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0790000 already exists. Skipping.
+1616387 2025-06-17 11:45:01,735 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0800000 already exists. Skipping.
+1616387 2025-06-17 11:45:01,735 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0810000 already exists. Skipping.
+1616387 2025-06-17 11:45:01,735 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0820000 already exists. Skipping.
+1616387 2025-06-17 11:45:01,735 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0830000 already exists. Skipping.
+1616387 2025-06-17 11:45:01,735 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0840000 already exists. Skipping.
+1616387 2025-06-17 11:45:01,735 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0850000 already exists. Skipping.
+1616387 2025-06-17 11:45:01,736 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0860000 already exists. Skipping.
+1616387 2025-06-17 11:45:01,736 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0870000 already exists. Skipping.
+1616387 2025-06-17 11:45:01,736 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0880000 already exists. Skipping.
+1616387 2025-06-17 11:45:01,736 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0890000 already exists. Skipping.
+1616387 2025-06-17 11:45:01,736 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0900000 already exists. Skipping.
+1616387 2025-06-17 11:45:01,736 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0910000 already exists. Skipping.
+1616387 2025-06-17 11:45:01,736 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0920000 already exists. Skipping.
+1616387 2025-06-17 11:45:01,736 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0930000 already exists. Skipping.
+1616387 2025-06-17 11:45:01,736 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0940000 already exists. Skipping.
+1616387 2025-06-17 11:45:01,736 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0950000 already exists. Skipping.
+1616387 2025-06-17 11:45:01,736 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0960000 already exists. Skipping.
+1616387 2025-06-17 11:45:01,736 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0970000 already exists. Skipping.
+1616387 2025-06-17 11:45:01,737 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0980000 already exists. Skipping.
+1616387 2025-06-17 11:45:01,737 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f0990000 already exists. Skipping.
+1616387 2025-06-17 11:45:01,737 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f1000000 already exists. Skipping.
+1616387 2025-06-17 11:45:01,737 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f1010000 already exists. Skipping.
+1616387 2025-06-17 11:45:01,737 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f1020000 already exists. Skipping.
+1616387 2025-06-17 11:45:01,737 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f1030000 already exists. Skipping.
+1616387 2025-06-17 11:45:01,737 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f1040000 already exists. Skipping.
+1616387 2025-06-17 11:45:01,737 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f1050000 already exists. Skipping.
+1616387 2025-06-17 11:45:01,737 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f1060000 already exists. Skipping.
+1616387 2025-06-17 11:45:01,737 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f1070000 already exists. Skipping.
+output_path (./local_outdata/2506170000_gfs_global.grb2f0520000)
+forecast_length_hour_str (053)
+out_filename (2506170000_gfs_global.grb2f0530000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0530000)
+forecast_length_hour_str (054)
+out_filename (2506170000_gfs_global.grb2f0540000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0540000)
+forecast_length_hour_str (055)
+out_filename (2506170000_gfs_global.grb2f0550000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0550000)
+forecast_length_hour_str (056)
+out_filename (2506170000_gfs_global.grb2f0560000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0560000)
+forecast_length_hour_str (057)
+out_filename (2506170000_gfs_global.grb2f0570000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0570000)
+forecast_length_hour_str (058)
+out_filename (2506170000_gfs_global.grb2f0580000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0580000)
+forecast_length_hour_str (059)
+out_filename (2506170000_gfs_global.grb2f0590000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0590000)
+forecast_length_hour_str (060)
+out_filename (2506170000_gfs_global.grb2f0600000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0600000)
+forecast_length_hour_str (061)
+out_filename (2506170000_gfs_global.grb2f0610000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0610000)
+forecast_length_hour_str (062)
+out_filename (2506170000_gfs_global.grb2f0620000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0620000)
+forecast_length_hour_str (063)
+out_filename (2506170000_gfs_global.grb2f0630000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0630000)
+forecast_length_hour_str (064)
+out_filename (2506170000_gfs_global.grb2f0640000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0640000)
+forecast_length_hour_str (065)
+out_filename (2506170000_gfs_global.grb2f0650000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0650000)
+forecast_length_hour_str (066)
+out_filename (2506170000_gfs_global.grb2f0660000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0660000)
+forecast_length_hour_str (067)
+out_filename (2506170000_gfs_global.grb2f0670000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0670000)
+forecast_length_hour_str (068)
+out_filename (2506170000_gfs_global.grb2f0680000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0680000)
+forecast_length_hour_str (069)
+out_filename (2506170000_gfs_global.grb2f0690000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0690000)
+forecast_length_hour_str (070)
+out_filename (2506170000_gfs_global.grb2f0700000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0700000)
+forecast_length_hour_str (071)
+out_filename (2506170000_gfs_global.grb2f0710000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0710000)
+forecast_length_hour_str (072)
+out_filename (2506170000_gfs_global.grb2f0720000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0720000)
+forecast_length_hour_str (073)
+out_filename (2506170000_gfs_global.grb2f0730000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0730000)
+forecast_length_hour_str (074)
+out_filename (2506170000_gfs_global.grb2f0740000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0740000)
+forecast_length_hour_str (075)
+out_filename (2506170000_gfs_global.grb2f0750000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0750000)
+forecast_length_hour_str (076)
+out_filename (2506170000_gfs_global.grb2f0760000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0760000)
+forecast_length_hour_str (077)
+out_filename (2506170000_gfs_global.grb2f0770000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0770000)
+forecast_length_hour_str (078)
+out_filename (2506170000_gfs_global.grb2f0780000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0780000)
+forecast_length_hour_str (079)
+out_filename (2506170000_gfs_global.grb2f0790000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0790000)
+forecast_length_hour_str (080)
+out_filename (2506170000_gfs_global.grb2f0800000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0800000)
+forecast_length_hour_str (081)
+out_filename (2506170000_gfs_global.grb2f0810000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0810000)
+forecast_length_hour_str (082)
+out_filename (2506170000_gfs_global.grb2f0820000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0820000)
+forecast_length_hour_str (083)
+out_filename (2506170000_gfs_global.grb2f0830000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0830000)
+forecast_length_hour_str (084)
+out_filename (2506170000_gfs_global.grb2f0840000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0840000)
+forecast_length_hour_str (085)
+out_filename (2506170000_gfs_global.grb2f0850000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0850000)
+forecast_length_hour_str (086)
+out_filename (2506170000_gfs_global.grb2f0860000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0860000)
+forecast_length_hour_str (087)
+out_filename (2506170000_gfs_global.grb2f0870000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0870000)
+forecast_length_hour_str (088)
+out_filename (2506170000_gfs_global.grb2f0880000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0880000)
+forecast_length_hour_str (089)
+out_filename (2506170000_gfs_global.grb2f0890000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0890000)
+forecast_length_hour_str (090)
+out_filename (2506170000_gfs_global.grb2f0900000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0900000)
+forecast_length_hour_str (091)
+out_filename (2506170000_gfs_global.grb2f0910000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0910000)
+forecast_length_hour_str (092)
+out_filename (2506170000_gfs_global.grb2f0920000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0920000)
+forecast_length_hour_str (093)
+out_filename (2506170000_gfs_global.grb2f0930000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0930000)
+forecast_length_hour_str (094)
+out_filename (2506170000_gfs_global.grb2f0940000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0940000)
+forecast_length_hour_str (095)
+out_filename (2506170000_gfs_global.grb2f0950000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0950000)
+forecast_length_hour_str (096)
+out_filename (2506170000_gfs_global.grb2f0960000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0960000)
+forecast_length_hour_str (097)
+out_filename (2506170000_gfs_global.grb2f0970000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0970000)
+forecast_length_hour_str (098)
+out_filename (2506170000_gfs_global.grb2f0980000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0980000)
+forecast_length_hour_str (099)
+out_filename (2506170000_gfs_global.grb2f0990000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f0990000)
+forecast_length_hour_str (100)
+out_filename (2506170000_gfs_global.grb2f1000000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f1000000)
+forecast_length_hour_str (101)
+out_filename (2506170000_gfs_global.grb2f1010000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f1010000)
+forecast_length_hour_str (102)
+out_filename (2506170000_gfs_global.grb2f1020000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f1020000)
+forecast_length_hour_str (103)
+out_filename (2506170000_gfs_global.grb2f1030000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f1030000)
+forecast_length_hour_str (104)
+out_filename (2506170000_gfs_global.grb2f1040000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f1040000)
+forecast_length_hour_str (105)
+out_filename (2506170000_gfs_global.grb2f1050000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f1050000)
+forecast_length_hour_str (106)
+out_filename (2506170000_gfs_global.grb2f1060000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f1060000)
+forecast_length_hour_str (107)
+out_filename (2506170000_gfs_global.grb2f1070000)
+output_path (./local_outdata/2506170000_gfs_global.grb2f1070000)
+forecast_length_hour_str (108)
+out_filename (2506170000_gfs_global.grb2f1080000)
+1616387 2025-06-17 11:45:01,737 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f1080000 already exists. Skipping.
+1616387 2025-06-17 11:45:01,737 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f1090000 already exists. Skipping.
+1616387 2025-06-17 11:45:01,738 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f1100000 already exists. Skipping.
+1616387 2025-06-17 11:45:01,738 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f1110000 already exists. Skipping.
+1616387 2025-06-17 11:45:01,738 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f1120000 already exists. Skipping.
+1616387 2025-06-17 11:45:01,738 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f1130000 already exists. Skipping.
+1616387 2025-06-17 11:45:01,738 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f1140000 already exists. Skipping.
+1616387 2025-06-17 11:45:01,738 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f1150000 already exists. Skipping.
+1616387 2025-06-17 11:45:01,738 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f1160000 already exists. Skipping.
+1616387 2025-06-17 11:45:01,738 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f1170000 already exists. Skipping.
+1616387 2025-06-17 11:45:01,738 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f1180000 already exists. Skipping.
+1616387 2025-06-17 11:45:01,738 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f1190000 already exists. Skipping.
+1616387 2025-06-17 11:45:01,738 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f1200000 already exists. Skipping.
+1616387 2025-06-17 11:45:01,738 - carl-gfs-data-retrieval - INFO - Trying to retrieve https://nomads.ncep.noaa.gov/cgi-bin/filter_gfs_0p25_1hr.pl?dir=%2Fgfs.20250617%2F00%2Fatmos&file=gfs.t00z.pgrb2.0p25.f121&var_APCP=on&var_DPT=on&var_HCDC=on&var_LCDC=on&var_MCDC=on&var_TCDC=on&var_RH=on&var_TMP=on&var_UGRD=on&var_VGRD=on&all_lev=on&subregion=&toplat=-15&leftlon=24&rightlon=34&bottomlat=-23...
+1616387 2025-06-17 11:45:18,230 - carl-gfs-data-retrieval - ERROR - HTTP Error 404: Could not find https://nomads.ncep.noaa.gov/cgi-bin/filter_gfs_0p25_1hr.pl?dir=%2Fgfs.20250617%2F00%2Fatmos&file=gfs.t00z.pgrb2.0p25.f121&var_APCP=on&var_DPT=on&var_HCDC=on&var_LCDC=on&var_MCDC=on&var_TCDC=on&var_RH=on&var_TMP=on&var_UGRD=on&var_VGRD=on&all_lev=on&subregion=&toplat=-15&leftlon=24&rightlon=34&bottomlat=-23
+1616387 2025-06-17 11:45:18,233 - carl-gfs-data-retrieval - INFO - Trying to retrieve https://nomads.ncep.noaa.gov/cgi-bin/filter_gfs_0p25_1hr.pl?dir=%2Fgfs.20250617%2F00%2Fatmos&file=gfs.t00z.pgrb2.0p25.f122&var_APCP=on&var_DPT=on&var_HCDC=on&var_LCDC=on&var_MCDC=on&var_TCDC=on&var_RH=on&var_TMP=on&var_UGRD=on&var_VGRD=on&all_lev=on&subregion=&toplat=-15&leftlon=24&rightlon=34&bottomlat=-23...
+1616387 2025-06-17 11:45:30,321 - carl-gfs-data-retrieval - ERROR - HTTP Error 404: Could not find https://nomads.ncep.noaa.gov/cgi-bin/filter_gfs_0p25_1hr.pl?dir=%2Fgfs.20250617%2F00%2Fatmos&file=gfs.t00z.pgrb2.0p25.f122&var_APCP=on&var_DPT=on&var_HCDC=on&var_LCDC=on&var_MCDC=on&var_TCDC=on&var_RH=on&var_TMP=on&var_UGRD=on&var_VGRD=on&all_lev=on&subregion=&toplat=-15&leftlon=24&rightlon=34&bottomlat=-23
+1616387 2025-06-17 11:45:30,324 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f1230000 already exists. Skipping.
+1616387 2025-06-17 11:45:30,325 - carl-gfs-data-retrieval - INFO - Trying to retrieve https://nomads.ncep.noaa.gov/cgi-bin/filter_gfs_0p25_1hr.pl?dir=%2Fgfs.20250617%2F00%2Fatmos&file=gfs.t00z.pgrb2.0p25.f124&var_APCP=on&var_DPT=on&var_HCDC=on&var_LCDC=on&var_MCDC=on&var_TCDC=on&var_RH=on&var_TMP=on&var_UGRD=on&var_VGRD=on&all_lev=on&subregion=&toplat=-15&leftlon=24&rightlon=34&bottomlat=-23...
+1616387 2025-06-17 11:45:32,196 - carl-gfs-data-retrieval - ERROR - HTTP Error 404: Could not find https://nomads.ncep.noaa.gov/cgi-bin/filter_gfs_0p25_1hr.pl?dir=%2Fgfs.20250617%2F00%2Fatmos&file=gfs.t00z.pgrb2.0p25.f124&var_APCP=on&var_DPT=on&var_HCDC=on&var_LCDC=on&var_MCDC=on&var_TCDC=on&var_RH=on&var_TMP=on&var_UGRD=on&var_VGRD=on&all_lev=on&subregion=&toplat=-15&leftlon=24&rightlon=34&bottomlat=-23
+1616387 2025-06-17 11:45:32,199 - carl-gfs-data-retrieval - INFO - Trying to retrieve https://nomads.ncep.noaa.gov/cgi-bin/filter_gfs_0p25_1hr.pl?dir=%2Fgfs.20250617%2F00%2Fatmos&file=gfs.t00z.pgrb2.0p25.f125&var_APCP=on&var_DPT=on&var_HCDC=on&var_LCDC=on&var_MCDC=on&var_TCDC=on&var_RH=on&var_TMP=on&var_UGRD=on&var_VGRD=on&all_lev=on&subregion=&toplat=-15&leftlon=24&rightlon=34&bottomlat=-23...
+1616387 2025-06-17 11:45:44,790 - carl-gfs-data-retrieval - ERROR - HTTP Error 404: Could not find https://nomads.ncep.noaa.gov/cgi-bin/filter_gfs_0p25_1hr.pl?dir=%2Fgfs.20250617%2F00%2Fatmos&file=gfs.t00z.pgrb2.0p25.f125&var_APCP=on&var_DPT=on&var_HCDC=on&var_LCDC=on&var_MCDC=on&var_TCDC=on&var_RH=on&var_TMP=on&var_UGRD=on&var_VGRD=on&all_lev=on&subregion=&toplat=-15&leftlon=24&rightlon=34&bottomlat=-23
+1616387 2025-06-17 11:45:44,794 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f1260000 already exists. Skipping.
+1616387 2025-06-17 11:45:44,794 - carl-gfs-data-retrieval - INFO - Trying to retrieve https://nomads.ncep.noaa.gov/cgi-bin/filter_gfs_0p25_1hr.pl?dir=%2Fgfs.20250617%2F00%2Fatmos&file=gfs.t00z.pgrb2.0p25.f127&var_APCP=on&var_DPT=on&var_HCDC=on&var_LCDC=on&var_MCDC=on&var_TCDC=on&var_RH=on&var_TMP=on&var_UGRD=on&var_VGRD=on&all_lev=on&subregion=&toplat=-15&leftlon=24&rightlon=34&bottomlat=-23...
+1616387 2025-06-17 11:45:49,384 - carl-gfs-data-retrieval - ERROR - HTTP Error 404: Could not find https://nomads.ncep.noaa.gov/cgi-bin/filter_gfs_0p25_1hr.pl?dir=%2Fgfs.20250617%2F00%2Fatmos&file=gfs.t00z.pgrb2.0p25.f127&var_APCP=on&var_DPT=on&var_HCDC=on&var_LCDC=on&var_MCDC=on&var_TCDC=on&var_RH=on&var_TMP=on&var_UGRD=on&var_VGRD=on&all_lev=on&subregion=&toplat=-15&leftlon=24&rightlon=34&bottomlat=-23
+1616387 2025-06-17 11:45:49,387 - carl-gfs-data-retrieval - INFO - Trying to retrieve https://nomads.ncep.noaa.gov/cgi-bin/filter_gfs_0p25_1hr.pl?dir=%2Fgfs.20250617%2F00%2Fatmos&file=gfs.t00z.pgrb2.0p25.f128&var_APCP=on&var_DPT=on&var_HCDC=on&var_LCDC=on&var_MCDC=on&var_TCDC=on&var_RH=on&var_TMP=on&var_UGRD=on&var_VGRD=on&all_lev=on&subregion=&toplat=-15&leftlon=24&rightlon=34&bottomlat=-23...
+1616387 2025-06-17 11:45:53,097 - carl-gfs-data-retrieval - ERROR - HTTP Error 404: Could not find https://nomads.ncep.noaa.gov/cgi-bin/filter_gfs_0p25_1hr.pl?dir=%2Fgfs.20250617%2F00%2Fatmos&file=gfs.t00z.pgrb2.0p25.f128&var_APCP=on&var_DPT=on&var_HCDC=on&var_LCDC=on&var_MCDC=on&var_TCDC=on&var_RH=on&var_TMP=on&var_UGRD=on&var_VGRD=on&all_lev=on&subregion=&toplat=-15&leftlon=24&rightlon=34&bottomlat=-23
+1616387 2025-06-17 11:45:53,100 - carl-gfs-data-retrieval - INFO - ./local_outdata/2506170000_gfs_global.grb2f1290000 already exists. Skipping.
+1616387 2025-06-17 11:45:53,101 - carl-gfs-data-retrieval - INFO - Trying to retrieve https://nomads.ncep.noaa.gov/cgi-bin/filter_gfs_0p25_1hr.pl?dir=%2Fgfs.20250617%2F00%2Fatmos&file=gfs.t00z.pgrb2.0p25.f130&var_APCP=on&var_DPT=on&var_HCDC=on&var_LCDC=on&var_MCDC=on&var_TCDC=on&var_RH=on&var_TMP=on&var_UGRD=on&var_VGRD=on&all_lev=on&subregion=&toplat=-15&leftlon=24&rightlon=34&bottomlat=-23...
+1616387 2025-06-17 11:45:55,343 - carl-gfs-data-retrieval - ERROR - HTTP Error 404: Could not find https://nomads.ncep.noaa.gov/cgi-bin/filter_gfs_0p25_1hr.pl?dir=%2Fgfs.20250617%2F00%2Fatmos&file=gfs.t00z.pgrb2.0p25.f130&var_APCP=on&var_DPT=on&var_HCDC=on&var_LCDC=on&var_MCDC=on&var_TCDC=on&var_RH=on&var_TMP=on&var_UGRD=on&var_VGRD=on&all_lev=on&subregion=&toplat=-15&leftlon=24&rightlon=34&bottomlat=-23
+1616387 2025-06-17 11:45:55,346 - carl-gfs-data-retrieval - INFO - Trying to retrieve https://nomads.ncep.noaa.gov/cgi-bin/filter_gfs_0p25_1hr.pl?dir=%2Fgfs.20250617%2F00%2Fatmos&file=gfs.t00z.pgrb2.0p25.f131&var_APCP=on&var_DPT=on&var_HCDC=on&var_LCDC=on&var_MCDC=on&var_TCDC=on&var_RH=on&var_TMP=on&var_UGRD=on&var_VGRD=on&all_lev=on&subregion=&toplat=-15&leftlon=24&rightlon=34&bottomlat=-23...

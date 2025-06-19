@@ -1,0 +1,54 @@
+{
+  "general": {
+    "log_directory": "/path/to/logs",
+    "temp_directory": "/path/to/temp",
+    "default_timezone": "UTC"
+  },
+
+  "nons": {
+    "log_directory": "/home/wrf/nons/gfs-retrieval/logs/",
+    "source_directory": "/home/wrf/nons/gfs-retrieval/local_outdata/",
+    "target_directory": "/home/wrf/nons/auto/indata/",
+    "ftp_directory": "/home/wrf/ftp/upload/",
+    "days_to_keep_logs": 1,
+    "gfs_retrieval_directory": "/home/wrf/nons/gfs-retrieval/",
+    "output_directory": "/home/wrf/nons/gfs-retrieval/local_outdata/",
+    "auto_indata_directory": "/home/wrf/nons/auto/indata/",
+    "plotting_toolbox_directory": "/home/wrf/nons/python-plotting-toolbox/",
+    "ftp_upload_directory": "/home/wrf/ftp/upload/",
+    "southern_africa_directory": "/home/wrf/uems/runs/southern_africa/emsprd/grads/",
+    "zimbabwe_directory": "/home/wrf/uems/runs/zimbabwe/emsprd/grads/",
+    "wx_presentation_directory": "/home/wrf/deployed/webb-downloading/"
+},
+
+
+
+
+  "project1": {
+    "source_directory": "/path/to/project1/source",
+    "output_directory": "/path/to/project1/output",
+    "ftp_directory": "/path/to/project1/ftp",
+    "gfs_retrieval_directory": "/path/to/project1/gfs_retrieval",
+    "auto_indata_directory": "/path/to/project1/auto_indata",
+    "plotting_toolbox_directory": "/path/to/project1/plotting_toolbox",
+    "days_to_keep_logs": 5
+  },
+  "project2": {
+    "source_directory": "/path/to/project2/source",
+    "output_directory": "/path/to/project2/output",
+    "ftp_directory": "/path/to/project2/ftp",
+    "gfs_retrieval_directory": "/path/to/project2/gfs_retrieval",
+    "auto_indata_directory": "/path/to/project2/auto_indata",
+    "plotting_toolbox_directory": "/path/to/project2/plotting_toolbox",
+    "days_to_keep_logs": 7
+  },
+  "project3": {
+    "source_directory": "/path/to/project3/source",
+    "output_directory": "/path/to/project3/output",
+    "ftp_directory": "/path/to/project3/ftp",
+    "gfs_retrieval_directory": "/path/to/project3/gfs_retrieval",
+    "auto_indata_directory": "/path/to/project3/auto_indata",
+    "plotting_toolbox_directory": "/path/to/project3/plotting_toolbox",
+    "days_to_keep_logs": 3
+  }
+}
