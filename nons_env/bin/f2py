@@ -1,4 +1,4 @@
-#!/home/wrf/nons/nons_env/bin/python3
+#!/home/wrf/deployed/nons_wrf_v4/nons_env/bin/python
 # -*- coding: utf-8 -*-
 import re
 import sys
