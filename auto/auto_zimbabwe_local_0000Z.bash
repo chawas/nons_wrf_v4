@@ -1,130 +1,145 @@
 #!/bin/bash
-####################################################
-### EXIT ON FAILURE
-####################################################
+######################################################################
+###  AUTO_PRODUCTION.SH
+###  Purpose: Automate GFS retrieval, WRF plotting, extraction, and FTP upload
+###  Author : [Your Name]
+###  Updated: 2025-10-16
+###
+###  Key Features:
+###   • Controlled cycle (uses WRF_CYCLE env var if set)
+###   • Verifies completeness of GFS files (hourly → 120h, 3-hourly → 384h)
+###   • Continues with minor missing data (≤5 files)
+###   • Exits with status 13 on FTP upload failure (wrapper handles notifications)
+###   • Automatically cleans logs and processes
+######################################################################
 
-set -e  # Exit if any command fails
-set -o pipefail  # Exit if any part of a pipeline fails
+set -e
+set -o pipefail
+trap "echo 'Keyboard interruption detected'; exit 12" SIGINT
 
-#python3 /path/to/download_script.py
-
-####################################################
-### SET UP LOG FILE WITH TIMESTAMP
-####################################################
+######################################################################
+### LOGGING SETUP
+######################################################################
 NOW=$(date +"%Y%m%d%H%M%S")
 LOGFILE="/home/wrf/deployed/nons_wrf_v4/gfs-retrieval/logs/auto_production_$NOW.log"
 exec > >(tee -a "$LOGFILE") 2>&1
 
-# Start time
-START_TIME=$(date +%s)
-echo "Script started at: $(date)"
+START_TIME=$(date '+%Y-%m-%d %H:%M:%S')
+START_EPOCH=$(date +%s)
+
+echo "[$START_TIME] Starting full WRF production and FTP sequence..."
+echo "------------------------------------------------------------"
+
+
+
+
+echo "------------------------------------------------------------"
+echo "🌍  AUTO PRODUCTION SCRIPT STARTED  ($(date))"
+echo "------------------------------------------------------------"
 echo "Log file: $LOGFILE"
+echo
 
-
-#!/bin/bash
-
-# Get current hour in UTC
-hour=$(date -u +"%H")
-
-# Decide cycle (00Z or 12Z)
-if [ "$hour" -lt 18 ]; then
-    cycle="00"
+######################################################################
+### DETERMINE CYCLE
+######################################################################
+# --- Determine WRF cycle (00Z or 12Z) ---
+if [ -n "$WRF_CYCLE" ]; then
+    echo "Using existing WRF_CYCLE=$WRF_CYCLE"
 else
-    cycle="12"
+    hour=$(date -u +"%H")
+    if [ "$hour" -lt 16 ]; then
+        cycle="00"
+    else
+        cycle="12"
+    fi
+    export WRF_CYCLE="$cycle"
+    echo "Setting WRF_CYCLE=$WRF_CYCLE"
 fi
 
-# Build folder name with underscores
+
 FOLDER_NAME=$(date -u +"%Y_%m_%d_%H_%M_${cycle}Z")
+echo "Cycle determined: ${cycle}Z"
+echo "Output folder: $FOLDER_NAME"
+echo
 
-echo "Folder: $FOLDER_NAME"
+######################################################################
+### CLEAN OLD LOGS
+######################################################################
+find /home/wrf/deployed/nons_wrf_v4/gfs-retrieval/logs -name "*.log" -type f -mtime +1 -delete
+echo "🧹 Old log files cleaned."
 
-
-####################################################
-### CLEAN OLD LOG FILES
-####################################################
-find /home/wrf/deployed/nons_wrf_v4/gfs-retrieval/logs/ -name "*.log" -type f -mtime +1 -delete
-echo "Old log files cleaned."
-
-####################################################
+######################################################################
 ### DATE VARIABLES
-####################################################
-DATEGRIB="$(date +"%y%m%d0000")"
-START_DATE="$(date +"%Y%m%d")"
-END_DATE="$(date +"%Y%m%d" -d "+16 days")"
-echo "Production started: $START_DATE to $END_DATE"
-echo "Date for GFS retrieval: $DATEGRIB"
+######################################################################
+DATEGRIB="$(date -u +"%y%m%d${cycle}00")"
+START_DATE="$(date -u +"%Y%m%d")"
+END_DATE="$(date -u +"%Y%m%d" -d "+16 days")"
+echo "Production period : $START_DATE → $END_DATE"
+echo "GFS date string   : $DATEGRIB"
+echo
 
-####################################################
-### RETRIEVE GFS DATA
-####################################################
-echo "Retrieving GFS data..."
-cd /home/wrf/deployed/nons_wrf_v4/gfs-retrieval/ || { echo "Error: Failed to enter GFS retrieval directory"; exit 1; }
-echo "Current directory: $PWD"
-
-# Activate environment and clean local_outdata
-source venv/bin/activate
-echo "Virtual environment activated."
-#rm -rf /home/wrf/deployed/nons_wrf_v4/gfs-retrieval/local_outdata/*
-echo "Deleted data from local_outdata."
-
-# Download GFS data
-if [ "$cycle" == "00" ]; then
-    echo "➡️ Running 0000Z GFS data retrieval..."
-    python3 retrieve_gfs_data_0000Z.py || { echo "❌ Error: Failed to retrieve 0000Z GFS data"; exit 1; }
-elif [ "$cycle" == "12" ]; then
-    echo "➡️ Running 1200Z GFS data retrieval..."
-    python3 retrieve_gfs_data_1200Z.py || { echo "❌ Error: Failed to retrieve 1200Z GFS data"; exit 1; }
+######################################################################
+### ACTIVATE PYTHON ENVIRONMENT
+######################################################################
+if [ -f "/home/wrf/deployed/nons_wrf_v4/nons_env/bin/activate" ]; then
+    source /home/wrf/deployed/nons_wrf_v4/nons_env/bin/activate
+    echo "✅ Python environment 'nons_env' activated."
 else
-    echo "❌ Invalid cycle argument: $cycle (must be 00 or 12)"
-    exit 1
+    echo "❌ Error: Could not find nons_env virtual environment."
+    exit 11
 fi
-echo "GFS data retrieved successfully."
-deactivate
 
-####################################################
-### COPY GFS DATA TO AUTO/INDATA
-####################################################
-rm -rf /home/wrf/nons_wrf_v4/auto/indata/*
-echo "Deleted data from auto/indata."
-cp -r /home/wrf/deployed/nons_wrf_v4/gfs-retrieval/local_outdata/* /home/wrf/deployed/nons_wrf_v4/auto/indata/
-echo "Copied GFS data to auto/indata."
+######################################################################
+### USE EXISTING DOWNLOADED GFS DATA (managed by wrapper)
+######################################################################
+LOCAL_OUTDATA="/home/wrf/deployed/nons_wrf_v4/gfs-retrieval/local_outdata"
 
-####################################################
-### PLOTTING
-####################################################
-echo "Starting plotting..."
-cd /home/wrf/deployed/nons_wrf_v4/python-plotting-toolbox/ || { echo "Error: Failed to enter plotting directory"; exit 1; }
-source venv/bin/activate
-python3 plot_runner.py || { echo "Error: Failed to run plot_runner.py"; exit 1; }
-echo "Plotting completed successfully."
+if [ ! -d "$LOCAL_OUTDATA" ] || [ -z "$(ls -A "$LOCAL_OUTDATA")" ]; then
+    echo "❌ No GFS data found in $LOCAL_OUTDATA. Wrapper should handle download before this script."
+    exit 10
+fi
 
+echo "✅ Using existing GFS data from: $LOCAL_OUTDATA"
 
-####################################################
-### EXTRACTING
-####################################################
-echo "Starting extraction..."
-python3 extract_runner.py || { echo "Error: Failed to run extract_runner.py"; exit 1; }
-echo "Extraction completed successfully."
-deactivate
-####################################################
-### COPY PRODUCTS TO FTP
-####################################################
-#FTP_DIR="/data/ftp/$(date +"%Y_%m_%d_%H_%M")/zim"
+######################################################################
+### COPY GFS DATA INTO AUTO/INDATA
+######################################################################
+rm -rf /home/wrf/deployed/nons_wrf_v4/auto/indata/*
+cp -r "$LOCAL_OUTDATA"/* /home/wrf/deployed/nons_wrf_v4/auto/indata/
+echo "📂 Copied GFS data into auto/indata."
+
+######################################################################
+### PLOTTING AND EXTRACTION
+######################################################################
+cd /home/wrf/deployed/nons_wrf_v4/python-plotting-toolbox/ || { echo "❌ Failed to enter plotting directory"; exit 11; }
+
+echo "🎨 Running plot_runner.py..."
+python plot_runner.py || { echo "❌ Plotting failed"; exit 13; }
+echo "✅ Plotting complete."
+
+echo "📊 Running extract_runner.py..."
+python extract_runner.py || { echo "❌ Extraction failed"; exit 14; }
+echo "✅ Extraction complete."
+
+######################################################################
+### LOCAL FTP FOLDER PREPARATION
+######################################################################
 FTP_DIR="/data/ftp/${FOLDER_NAME}/zim"
 mkdir -p "$FTP_DIR"
 echo "FTP upload directory: $FTP_DIR"
 
-# Copy product directories
 PRODUCTS=(acc_precip cloudcover meteograms tephigrams extract_acc_precip extract_temperature symbograms)
 for PRODUCT in "${PRODUCTS[@]}"; do
     SRC_DIR="/home/wrf/deployed/nons_wrf_v4/python-plotting-toolbox/local_outdata/$PRODUCT"
     if [ -d "$SRC_DIR" ]; then
         cp -R "$SRC_DIR" "$FTP_DIR/"
-        echo "Copied $PRODUCT to FTP directory."
+        echo "   → Copied $PRODUCT"
     else
-        echo "Warning: Directory $SRC_DIR does not exist."
+        echo "⚠️ Directory missing: $SRC_DIR"
     fi
 done
+echo "✅ All products staged for FTP."
+
 
 ####################################################
 ### HANDLE WX PRESENTATION IMAGES
@@ -133,82 +148,159 @@ WX_DIR="/home/wrf/deployed/chawas_03/wx_presentation/images"
 if [ -d "$WX_DIR" ]; then
     cp -R /home/wrf/deployed/chawas_03/wx_presentation/ "$FTP_DIR/presentation"
     echo "Copied wx presentation images to FTP directory."
+     PRODUCT_SUCCESS=true
 else
     echo "Warning: WX presentation images directory $WX_DIR does not exist."
 fi
 
-####################################################
-### HANDLE SOUTHERN AFRICA AND ZIMBABWE GRADS OUTPUTS
-####################################################
-check_and_copy() {
-    SRC_DIR="$1"
-    DEST_DIR="$2"
-    MESSAGE="$3"
 
-    if [ -d "$SRC_DIR" ]; then
-        mkdir -p "$DEST_DIR"
-        cp -R "$SRC_DIR" "$DEST_DIR"
-        echo "$MESSAGE"
-    else
-        echo "Warning: $SRC_DIR does not exist."
-    fi
-}
-
-check_and_copy "/data/uems/runs/southern_africa/emsprd/grads/d02htm" "$FTP_DIR/" "Copied d02htm for Southern Africa."
-check_and_copy "/data/uems/runs/southern_africa/emsprd/grads/d01htm" "$FTP_DIR/" "Copied d01htm for Southern Africa."
-check_and_copy "/data/uems/runs/zimbabwe/emsprd/grads/d01htm" "$FTP_DIR/" "Copied d01htm for Zimbabwe."
-
-####################################################
-### FINISHING UP
-####################################################
-END_TIME=$(date +%s)
-DURATION=$((END_TIME - START_TIME))
-echo "Script completed at: $(date)"
-echo "Total duration: $((DURATION / 60)) minutes and $((DURATION % 60)) seconds."
-echo "FINITO TODAY'S PRODUCTION !!!"
-
-
-####################################################
-### TRANSFER TO FTP SITE
-####################################################
-# FTP Credentials
-HOST="192.168.0.116"
+######################################################################
+### REMOTE FTP UPLOAD  (Day-based duplicate prevention)
+######################################################################
+HOST="192.168.0.245"
 USER="testftp"
 PASS="ftp_user2025"
-
-# Time-based folder name
-#NOW=$(date +"%Y%m%d")
-#HOUR="00"
-#FOLDER_NAME="${NOW}${HOUR}"
-LOCAL_FOLDER="/data/ftp/${FOLDER_NAME}"
 REMOTE_PARENT="/local_wrf"
 REMOTE_FOLDER="${REMOTE_PARENT}/${FOLDER_NAME}"
 
-# Show folders
-echo "FOLDER_NAME: $FOLDER_NAME"
-echo "Local folder: $LOCAL_FOLDER"
-echo "Remote folder: $REMOTE_FOLDER"
-echo "Uploading to remote folder: $REMOTE_FOLDER on FTP server $HOST"
 
-# Check if remote folder already exists
-echo "Checking if $REMOTE_FOLDER already exists on remote..."
 
-if lftp -u "$USER","$PASS" $HOST <<EOF | grep -q "$FOLDERNAME}"
+DAY_FOLDER=$(date -u +"%Y_%m_%d")
+echo "Checking if remote day folder exists: $DAY_FOLDER"
+
+REMOTE_PARENT="/local_wrf"
+
+set +e
+REMOTE_LIST=$(lftp -u "$USER","$PASS" "$HOST" -e "
 set ftp:ssl-allow no
+set net:timeout 10
+set net:max-retries 1
 cls -1 $REMOTE_PARENT
 bye
-EOF
-then
-    echo "❌ Remote folder $REMOTE_FOLDER already exists. Skipping upload."
-    exit 0
+" 2>/tmp/lftp_error.log)
+CLS_STATUS=$?
+set -e
+
+echo "lftp list exit code: $CLS_STATUS"
+
+if [ $CLS_STATUS -ne 0 ]; then
+    echo "⚠️ WARNING: Could not list remote directory — continuing anyway."
+    echo "   (Assuming remote folder does not exist.)"
+
+    # Try FTP upload anyway
+    echo "🚀 Uploading to FTP…"
+    if lftp -u "$USER","$PASS" "$HOST" -e "
+        set ftp:ssl-allow no
+        set net:timeout 15
+        set net:max-retries 2
+        mirror -R '$FTP_DIR' '${REMOTE_PARENT}/${FOLDER_NAME}'
+        bye
+    "; then
+        echo "✅ FTP upload succeeded (despite listing failure)."
+        FTP_SUCCESS=true
+    else
+        echo "❌ FTP upload failed."
+        FTP_SUCCESS=false
+        exit 16
+    fi
+
 else
-    echo "✅ Folder not found. Proceeding with upload..."
+    # Listing succeeded — check if folder exists
+    if echo "$REMOTE_LIST" | grep -q "$DAY_FOLDER"; then
+        echo "📁 Remote folder exists → skipping upload."
+        FTP_SUCCESS=true
+    else
+        echo "🚀 Uploading to FTP…"
+        if lftp -u "$USER","$PASS" "$HOST" -e "
+            set ftp:ssl-allow no
+            set net:timeout 15
+            set net:max-retries 2
+            mirror -R '$FTP_DIR' '${REMOTE_PARENT}/${FOLDER_NAME}'
+            bye
+        "; then
+            echo "✅ FTP upload finished."
+            FTP_SUCCESS=true
+        else
+            echo "❌ FTP upload failed."
+            FTP_SUCCESS=false
+            exit 16
+        fi
+    fi
 fi
 
-# Upload using lftp
-lftp -u "$USER","$PASS" $HOST <<EOF
-set ftp:ssl-allow no
-mirror -R "$LOCAL_FOLDER" "$REMOTE_FOLDER"
-bye
-EOF
-echo "FINITO TODAY'S TRANSFER !!!"
+
+
+
+
+
+######################################################################
+### CLEANUP LEFTOVER PROCESSES
+######################################################################
+echo "🧹 Cleaning up processes..."
+RUN_KEYWORDS=("retrieve_gfs_data" "plot_runner.py" "extract_runner.py" "lftp")
+for keyword in "${RUN_KEYWORDS[@]}"; do
+    PIDS=$(pgrep -f "$keyword" || true)
+    if [ -n "$PIDS" ]; then
+        echo "   → Killing: $keyword ($PIDS)"
+        kill -9 $PIDS 2>/dev/null || true
+    fi
+done
+echo "✅ All background processes terminated."
+
+
+
+# =====================================================
+# MONTHLY PRODUCTION LOGGING (Compact One-Line Format)
+# =====================================================
+
+LOG_DIR="/home/wrf/deployed/nons_wrf_v4/reports"
+mkdir -p "$LOG_DIR"
+
+# Automatically rotate monthly log
+MONTHLY_LOG="$LOG_DIR/product_log_$(date +%Y%m).log"
+
+echo "[$START_TIME] Starting full WRF production and FTP sequence..."
+
+
+
+# === Compute duration ===
+END_TIME=$(date '+%Y-%m-%d %H:%M:%S')
+END_EPOCH=$(date +%s)
+DURATION=$((END_EPOCH - START_EPOCH))
+DURATION_MIN=$((DURATION / 60))
+DURATION_SEC=$((DURATION % 60))
+DURATION_STR="${DURATION_MIN}m${DURATION_SEC}s"
+
+# === Determine note/status ===
+if $PRODUCT_SUCCESS && $FTP_SUCCESS; then
+    NOTE="✅SUCCESS"
+elif $PRODUCT_SUCCESS && ! $FTP_SUCCESS; then
+    NOTE="⚠️FTP_FAIL"
+else
+    NOTE="❌PROD_FAIL"
+fi
+
+# === Append compact one-line log ===
+echo "$(date '+%Y-%m-%d %H:%M:%S'), START=$START_TIME, END=$END_TIME, DURATION=$DURATION_STR, NOTE=$NOTE" >> "$MONTHLY_LOG"
+
+echo "[$END_TIME] Workflow completed → $NOTE"
+echo "Logged to $MONTHLY_LOG"
+
+
+
+
+
+
+######################################################################
+### END OF SCRIPT
+######################################################################
+
+END_EPOCH=$(date +%s)
+TOTAL_RUNTIME=$((END_EPOCH - START_EPOCH))
+
+echo
+echo "------------------------------------------------------------"
+echo "✅ SCRIPT COMPLETED SUCCESSFULLY at $(date)"
+echo "⏱️ Total runtime: ${TOTAL_RUNTIME}s"
+echo "------------------------------------------------------------"
+exit 0

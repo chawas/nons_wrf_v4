@@ -1,3 +1,5 @@
+from auto.backup.ai_run_wrf_am_wrapper_2025110310 import handle_failure
+
 #!/usr/bin/env python3
 """
 AI_RUN_WRF_AM_WRAPPER
@@ -58,7 +60,7 @@ def find_existing_processes(name):
 
 def wait_or_kill_existing(max_wait_minutes=10):
     """Wait up to `max_wait_minutes` for previous run, then terminate."""
-    existing_procs = find_existing_processes("ai_run_wrf_am_wrapper.py")
+    existing_procs = find_existing_processes("ai_run_wrf_am_wrapper_2025110310.py")
 
     if not existing_procs:
         logger.info("✅ No existing WRF_AM_ai process detected.")
@@ -69,7 +71,7 @@ def wait_or_kill_existing(max_wait_minutes=10):
     while waited < max_wait_minutes:
         time.sleep(60)
         waited += 5
-        still_running = find_existing_processes("ai_run_wrf_am_wrapper.py")
+        still_running = find_existing_processes("ai_run_wrf_am_wrapper_2025110310.py")
         if not still_running:
             logger.info("✅ Previous process finished after %d minutes. Continuing new run.", waited)
             return
