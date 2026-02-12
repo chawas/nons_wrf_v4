@@ -1,0 +1,6 @@
+nons_env/*
+auto/indata
+gfs-retrieval/backup
+gfs-retrieval/logs
+gfs-retrieval/local_outdata
+backup
