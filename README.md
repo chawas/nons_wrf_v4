@@ -1,1 +1,2 @@
-git push origin
+gitlab: git push origingitlab
+github: git push origin
