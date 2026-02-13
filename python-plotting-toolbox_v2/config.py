@@ -1,0 +1,18 @@
+import logging
+import json
+
+logger = logging.getLogger('python-plotting-toolbox.config')
+
+# Load config.json unless a local config.local.json exist.
+# We will combine the configuration in "common" and the SMHI-mode,
+# For example for test, we will combine "common" with "test" from the json file.
+with open('/home/wrf/deployed/nons_wrf_v4/python-plotting-toolbox/config.json', 'r') as f:
+    config_json = json.load(f)
+    CONFIG = config_json#["common"]
+
+DATA_SOURCE = CONFIG["dataSource"]
+INDATA_PATH = CONFIG["common"][DATA_SOURCE]["indataPath"]
+PREFIX = CONFIG["common"][DATA_SOURCE]["prefix"]
+DOMAIN = CONFIG["common"][DATA_SOURCE]["domain"]
+ACCUMULATED_PRECIPITATION = CONFIG["common"][DATA_SOURCE]["accumulatedPrecipitation"]
+PRECIP_MULT_FACTOR = CONFIG["common"][DATA_SOURCE]["precipMultFactor"]

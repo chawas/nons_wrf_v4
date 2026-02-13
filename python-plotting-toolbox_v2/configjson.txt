@@ -1,0 +1,170 @@
+{
+  "dataSource": "GFS",
+  "common": {
+    "WRF":{
+      "indataPath": "../../wrf-data/zimbabwe/20231027/00/emsprd/grib/",
+      "prefix": "_wrfout_arw_",
+      "domain": "d01",
+      "accumulatedPrecipitation": false,
+      "precipMultFactor": 1.0,
+      "wantedParameters": "[(2,'2t'), (0, 'ncpcp'), (0, 'acpcp'), (10, '10u'), (10, '10v'), (0, 'lcc'), (0, 'mcc'), (0, 'hcc')]",
+      "parameterNames": "['t', 'ncpcp', 'acpcp', 'u', 'v', 'lcc', 'mcc', 'hcc']"
+    },
+    "ECMWF": {
+      "indataPath": "../ecmwf-retrieval/local_outdata/",
+      "prefix": "_ecmwf_",
+      "domain": "global",
+      "accumulatedPrecipitation": true,
+      "precipMultFactor": 1000.0
+    },
+    "GFS":{
+      "indataPath": "../gfs-retrieval/local_outdata/",
+      "prefix": "_gfs_",
+      "domain": "global",
+      "accumulatedPrecipitation": true,
+      "precipMultFactor": 1.0,
+      "wantedParameters": "[(2,'2t'), (0, 'tp'), (10, '10u'), (10, '10v'), (0, 'lcc'), (0, 'mcc'), (0, 'hcc')]",
+      "parameterNames": "['t', 'tp', 'u', 'v', 'lcc', 'mcc', 'hcc']"
+    }
+  },
+  "plotters":{
+    "meteograms": {
+      "locationsFile": "./IO/plotters/locations_meteograms.conf",
+      "timeZone": "Africa/Addis_Ababa",
+      "symbols": true,
+      "outdataPath": "./local_outdata/meteograms/",
+      "parameters":{
+        "WRF":{
+          "wantedParameters": "[(2,'2t'), (0, 'ncpcp'), (0, 'acpcp'), (10, '10u'), (10, '10v'), (0, 'lcc'), (0, 'mcc'), (0, 'hcc')]",
+          "parameterNames": "['t', 'ncpcp', 'acpcp', 'u', 'v', 'lcc', 'mcc', 'hcc']"
+        },
+        "GFS":{
+          "wantedParameters": "[(2,'2t'), (0, 'tp'), (10, '10u'), (10, '10v'), (0, 'lcc'), (0, 'mcc'), (0, 'hcc')]",
+          "parameterNames": "['t', 'tp', 'u', 'v', 'lcc', 'mcc', 'hcc']"
+        },
+        "ECMWF":{
+          "wantedParameters": "[(2,'2t'), (0, 'tp'), (10, '10u'), (10, '10v')]",
+          "parameterNames": "['t', 'tp', 'u', 'v']"
+        }
+      }
+    },
+    "acc_precip": {
+      "locationsFile": "./IO/plotters/locations_acc_precip.conf",
+      "timeZone": "UTC",
+      "start_of_precipitation_day": 6,
+      "accumulation_times" : "[1,12,24]",
+      "latS": -23,
+      "latN": -15,
+      "lonW": 23,
+      "lonE": 34,
+      "outdataPath": "./local_outdata/acc_precip/",
+      "parameters":{
+        "WRF":{
+          "wantedParameters": "[(0, 'ncpcp'), (0, 'acpcp')]",
+          "parameterNames": "['ncpcp', 'acpcp']"
+        },
+        "ECMWF":{
+          "wantedParameters": "[(0, 'tp')]",
+          "parameterNames": "['tp']"
+        },
+        "GFS":{
+          "wantedParameters":"[(0, 'tp')]",
+          "parameterNames": "['tp']"
+        }
+      }
+    },
+    "cloudcover": {
+      "locationsFile": "./IO/plotters/locations_cloudcover.conf",
+      "timeZone": "UTC",
+      "latS": -23,
+      "latN": -15,
+      "lonW": 23,
+      "lonE": 34,
+      "outdataPath": "./local_outdata/cloudcover/",
+      "parameters":{
+        "WRF":{
+          "wantedParameters": "[(0, 'lcc'), (0, 'mcc'), (0, 'hcc')]",
+          "parameterNames": "['lcc', 'mcc', 'hcc']"
+        },
+        "ECMWF":{
+          "wantedParameters": "[(0, 'tcc')]",
+          "parameterNames": "['tcc']"
+        },
+        "GFS":{
+          "wantedParameters": "[(0, 'lcc'), (0, 'mcc'), (0, 'hcc')]",
+          "parameterNames": "['lcc', 'mcc', 'hcc']"
+        }
+      }
+    },
+    "symbograms": {
+      "locationsFile": "./IO/plotters/locations_symbograms.conf",
+      "timeZone": "UTC",
+      "symbols": true,
+      "matchTimestamps": "['00:00', '06:00', '12:00', '18:00']",
+      "outdataPath": "./local_outdata/symbograms/",
+      "parameters":{
+        "WRF":{
+          "wantedParameters": "[(2,'2t'), (0, 'ncpcp'), (0, 'acpcp'), (10, '10u'), (10, '10v'), (0, 'lcc'), (0, 'mcc'), (0, 'hcc')]",
+          "parameterNames": "['t', 'ncpcp', 'acpcp', 'u', 'v', 'lcc', 'mcc', 'hcc']"
+        },
+        "GFS":{
+          "wantedParameters": "[(2,'2t'), (0, 'tp'), (10, '10u'), (10, '10v'), (0, 'lcc'), (0, 'mcc'), (0, 'hcc')]",
+          "parameterNames": "['t', 'tp', 'u', 'v', 'lcc', 'mcc', 'hcc']"
+        },
+        "ECMWF":{
+          "wantedParameters": "[(2,'2t'), (0, 'tp'), (10, '10u'), (10, '10v')]",
+          "parameterNames": "['t', 'tp', 'u', 'v']"
+        }
+      }
+    },
+    "tephigrams": {
+      "locationsFile": "./IO/plotters/locations_tephigrams.conf",
+      "timeZone": "UTC",
+      "matchTimestamps": "['00:00', '06:00', '12:00', '18:00']",
+      "outdataPath": "./local_outdata/tephigrams/"
+    }
+  },
+  "extracters":{
+    "extract_acc_precip": {
+      "locationsFile": "./IO/extracters/locations_extract.conf",
+      "timeZone": "UTC",
+      "start_of_precipitation_day": 6,
+      "accumulation_times" : "[12,24]",
+      "outdataPath": "./local_outdata/extract_acc_precip/",
+      "parameters":{
+        "WRF":{
+          "wantedParameters": "[(0, 'ncpcp'), (0, 'acpcp')]",
+          "parameterNames": "['ncpcp', 'acpcp']"
+        },
+        "ECMWF":{
+          "wantedParameters": "[(0, 'tp')]",
+          "parameterNames": "['tp']"
+        },
+        "GFS":{
+          "wantedParameters": "[(0, 'tp')]",
+          "parameterNames": "['tp']"
+        }
+      }
+    },
+    "extract_temperature": {
+      "locationsFile": "./IO/extracters/locations_extract.conf",
+      "timeZone": "UTC",
+      "extraction_times" : "[6]",
+      "outdataPath": "./local_outdata/extract_temperature/",
+      "parameters":{
+        "WRF":{
+        "wantedParameters": "[(2, '2t')]",
+        "parameterNames": "['t']"
+        },
+        "ECMWF": {
+          "wantedParameters": "[(2, '2t')]",
+          "parameterNames": "['t']"
+        },
+        "GFS": {
+          "wantedParameters": "[(2, '2t')]",
+          "parameterNames": "['t']"
+        }
+      }
+    }
+  }
+}

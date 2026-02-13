@@ -1,0 +1,8 @@
+{
+    "common": {
+        "domainURL": "https://nomads.ncep.noaa.gov/pub/data/nccf/com/gfs/prod/",
+        "outdataPath": "/home/wrf/deployed/nons_wrf_v4/gfs-retrieval/local_outdata/",
+        "fileSuffix": ".grib2",
+        "maxForecastLength": 384
+    }
+}

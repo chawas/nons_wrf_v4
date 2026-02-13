@@ -1,0 +1,37 @@
+.box{
+    display: flex;
+    width: 70%;
+}
+.city{
+    width: 60px;
+    background-color: #3B6272;
+    display: flex;
+    justify-content: center;
+}
+.city-text{
+    display:inline;
+    letter-spacing: 10px;
+    padding: 0px;
+    color:white;
+    margin: 0px;
+    margin-bottom: 50%;
+    transform: rotate(180deg);
+    writing-mode: vertical-lr;
+}
+.symbogram--table{
+    margin: 0;
+    background-color: #37728B;
+    color: white;
+}
+.days{
+  background-color: #3B6272;
+}
+.max-temps{
+  background-color: #37728B;
+  }
+.symbols{
+  background-image: linear-gradient(to top, #3B6272 0%, #37728B 100%);
+}
+.min-temps{
+  background-color: #3B6272;
+}

@@ -1,0 +1,661 @@
+    1  ll
+    2  ems_autorun --date 20231123 --cycle 00 --length 384
+    3  cd nons/auto/
+    4  ll
+    5  crontab -e
+    6  conda deactivate
+    7  code .
+    8  cd nons/python-plotting-toolbox/
+    9  ll
+   10  code .
+   11  cd ../auto/
+   12  ll
+   13  nano auto_zimbabwe_local.bash 
+   14  ./auto_zimbabwe_local.bash 
+   15  nano auto_zimbabwe_local.bash 
+   16  ./auto_zimbabwe_local.bash 
+   17  nano auto_zimbabwe_local.bash 
+   18  crontab -e
+   19  ./run.sh plot_runner.py 
+   20  ./run.sh extract_runner.py 
+   21  crontab -e
+   22  cd nons/python-plotting-toolbox/logs/
+   23  ll
+   24  tail -f carl-wrf-tools.plot_runner.txt 
+   25  tail -f carl-wrf-tools.extract_runner.txt 
+   26  crontab -e
+   27  cd /
+   28  ll
+   29  cd /home/wrf/
+   30  ll
+   31  ll -lrt
+   32  ./download_uems.sh 
+   33  ls -l download_uems.sh 
+   34  ./download_uems.sh 
+   35  ls -l uems_install.pl 
+   36  ./uems_install.pl 
+   37  ./uems_install.pl --install --continue
+   38  cd /home/wrf/uems/runs/zimbabwe/emsprd/
+   39  ll
+   40  cd /home/wrf/uems/util/
+   41  ll
+   42  cd grads/products/kumar/
+   43  ll
+   44  ./plot_grads.tcsh 
+   45  pwd
+   46  cd /home/wrf/uems/runs/zimbabwe/
+   47  ll
+   48  cd emsprd/
+   49  ll
+   50  cd ..
+   51  ll
+   52  ems_autorun --date 20231130 --cycle 00 --length 24
+   53  tail -f /home/wrf/uems/runs/zimbabwe/rsl.out.0000
+   54  pip install libjpeg.so.62 
+   55  pip install --upgrade pip
+   56  sudo pip install libjpeg.so.62 
+   57  sudo apt-get update
+   58  sudo apt-get install libjpeg62
+   59  sudo apt-get install build-essential mpich* libnetcdf* hdf5* netcdf-bin -y
+   60  sudo apt-get install grads cdo r-base-core ncl-ncarg nco parallel gdal-bin dos2unix htop curl -y
+   61  sudo apt-get install build-essential mpich* libnetcdf* \hdf5* netcdf-bin -y
+   62  sudo apt-get install grads cdo r-base-core \ncl-ncarg nco parallel gdal-bin dos2unix htop curl -y
+   63  sudo apt-get remove openmpi* -y
+   64  sudo apt-get install libssl1.0.0 libssl-dev gawk -y
+   65  sudo ln -sf /lib/x86_64-linux-gnu/libcrypt.so.1 /usr/lib/libssl.so.10
+   66  sudo ln -sf /usr/lib/x86_64-linux-gnu/libcrypto.so.1.0.0 /usr/lib/libcrypto.so.10
+   67  cd /home/wrf/uems/etc/
+   68  ll
+   69  gedit EMS.profile &
+   70  sudo apt-get install zlib1g-dev
+   71  sudo apt -y install libpng-tools
+   72  sudo aptitude -y install libpng-tools
+   73  cd /home/wrf/Downloads/
+   74  ll
+   75  ll -lrt
+   76  tar xf libpng-1.5.30.tar.xz
+   77  rm -rf libpng-1.*
+   78  tar xf libpng-1.5.30.tar.xz
+   79  ll
+   80  cd libpng-1.5.30/
+   81  ll
+   82  ./configure --prefix=/home/wrf/uems/util/grads
+   83  make install
+   84  sudo ln -s /home/wrf/uems/util/grads/lib/libpng15.so.15 /usr/lib/libpng15.so.15
+   85  gedit .bashrc &
+   86  cd
+   87  gedit .bashrc &
+   88  cd /home/wrf/uems/util/grads
+   89  ll
+   90  mv bin bin.uems
+   91  ln -s /usr/bin/ bin
+   92  mv lib lib.uems
+   93  ln -s /usr/lib/x86_64-linux-gnu/ lib
+   94  sudo cp bin.uems/g2ctl.pl bin/
+   95  cd /home/wrf/uems/etc
+   96  gedit EMS.profile 
+   97  cd /home/wrf/uems/etc
+   98  gedit EMS.cshrc 
+   99  mkdir /data/wrf/uems/data -p
+  100  cd /home/wrf/uems/data
+  101  ll
+  102  mv geog /data/wrf/uems/data/
+  103  cd geog/
+  104  ll
+  105  cd ..
+  106  mv geog /data/wrf/uems/data/
+  107  ll
+  108  cp -R geog /data/wrf/uems/data/
+  109  cd /home/wrf/uems/
+  110  ll
+  111  cd domwiz/
+  112  ll
+  113  cd bin/
+  114  ll
+  115  ./dwiz
+  116  cd /home/wrf/uems/runs/zimbabwe/
+  117  ll
+  118  ems_autorun --date 20231128 --cycle 00 --length 24
+  119  ems_autorun --date 20231130 --cycle 00 --length 24
+  120  ems_autorun --date 20231130 --cycle 00 --length 120
+  121  cd /home/wrf/uems/runs/zimbabwe/emsprd/
+  122  ll
+  123  cd /home/wrf/uems/util/grads/products/kumar/
+  124  ll
+  125  cd bin/
+  126  ll
+  127  dwiz
+  128  cd /home/wrf/uems/runs/southern_africa/conf/
+  129  ll
+  130  cd ems_post/
+  131  ll
+  132  nano post_uems.conf 
+  133  cd ../ems_auto/
+  134  nano ems_autorun.conf 
+  135  cd ../..
+  136  cd ../zimbabwe/
+  137  cd conf/
+  138  cd ems_auto/
+  139  ll
+  140  nano ems_autorun.conf 
+  141  cd ..
+  142  ll
+  143  cd ..
+  144  ems_autorun --date 20231201 --cycle 00 --length 240
+  145  cd ../southern_africa/
+  146  ll
+  147  ems_autorun --date 20231201 --cycle 00 --length 240
+  148  cd ../zimbabwe/
+  149  ll
+  150  cd log/
+  151  ll
+  152  cd ..
+  153  ll
+  154  cd log/
+  155  ll
+  156  cd ..
+  157  ll
+  158  cd grib/
+  159  ll
+  160  cd /home/wrf/nons/
+  161  ll
+  162  cd gfs-retrieval/
+  163  ll
+  164  cd logs/
+  165  ll
+  166  nano zimbabwe.log 
+  167  echo abc.java >> "logfile.$(date +'%Y-%m-%d').log"
+  168  filename="logfile.$(date +'%Y-%m-%d').log"
+  169  echo $date
+  170  echo $filename
+  171  filename="logfile.$ date +"%FT%H%M".log" 
+  172  echo $filename
+  173  filename="logfile.$(date +"%FT%H%M").log" 
+  174  echo $filename
+  175  crontab -e
+  176  cd /home/wrf/nons/gfs-retrieval/logs/
+  177  ll
+  178  tail -f zimbabwe.log 
+  179  crontab -e
+  180  tail -f zimbabwe.log 
+  181  crontab -e
+  182  tail -f zimbabwe.log 
+  183  ll
+  184  rm -r zimbabwe.log 
+  185  ll
+  186  rm -r carl-gfs-data-retrieval.retrieve_gfs_data.txt 
+  187  ll
+  188  crontab -e
+  189  ll
+  190  crontab -e
+  191  cd /home/wrf/uems/runs/zimbabwe/
+  192  ll
+  193  ems_autorun --date 20231130 --cycle 00 --length 24
+  194  ems_autorun --date 20231130 --cycle 00 --length 240
+  195  ems_autorun --date 20231130 --cycle 00 --length 120
+  196  ll
+  197  ems_run --date 20231130 --cycle 00 --length 120
+  198  ems_run --date 20231130 --cycle 00 --length 120 --noscour
+  199  ems_run 
+  200  ems_post --grads
+  201  ems_autorun --date 20231130 --cycle 00 --length 384
+  202  ems_autorun --date 20231201 --cycle 00 --length 24
+  203  cd emsprd/
+  204  ll
+  205  cd ..
+  206  ems_autorun --date 20231201 --cycle 00 --length 384
+  207  ems_autorun --date 20231201 --cycle 00 --length 120
+  208  ems_run 
+  209  cd emsprd/
+  210  ll
+  211  ems_autorun --date 20231201 --cycle 00 --length 120
+  212  cd ..
+  213  ems_autorun --date 20231201 --cycle 00 --length 120
+  214  ll
+  215  cd emsprd/
+  216  ll
+  217  cd ..
+  218  ems_post --grads
+  219  cd emsprd/
+  220  ll
+  221  cd grads/
+  222  ll
+  223  cp d01htm/ /home/wrf/ftp/upload/2023120100/zim/
+  224  cp -R d01htm/ /home/wrf/ftp/upload/2023120100/zim/
+  225  cd ../..
+  226  ems_prep --dset gfs50pt --length 240
+  227  ems_prep --dset gfs50pt --date 20231201 --cycle 00 --length 240
+  228  ems_prep --dset gfs50p --date 20231201 --cycle 00 --length 240
+  229  ems_prep --dset gfspt --date 20231201 --cycle 00 --length 240
+  230  ems_prep --dset gfs25pt --date 20231201 --cycle 00 --length 240
+  231  ems_prep --dset gfspt --length 24
+  232  ems_autorun --date 20231201 --cycle 00 --length 240
+  233  cd ../southern_africa/
+  234  ll
+  235  ems_autorun --date 20231201 --cycle 00 --length 120
+  236  cd conf/ems_run/
+  237  ll
+  238  nano run_ncpus.conf 
+  239  cd /home/wrf/uems/runs/southern_africa/
+  240  ll
+  241  ems_autorun --date 20231201 --cycle 00 --length 120
+  242  cd emsprd/
+  243  ll
+  244  cd grads/
+  245  ll
+  246  cd d01htm/
+  247  ll
+  248  crontab -e
+  249  cd /home/wrf/uems/runs/southern_africa/
+  250  ll
+  251  ems_autorun --date 20231204 --cycle 00 --length 120
+  252  cd ../zimbabwe/
+  253  ll
+  254  ems_autorun --date 20231204 --cycle 00 --length 120
+  255  ems_post --grads
+  256  tail -f /home/wrf/uems/runs/zimbabwe/rsl.out.0000
+  257  tail -f /home/wrf/uems/runs/zimbabwe/rsl.out.0000
+  258  filename="logfile.$(date +"%FT%H%M").log" 
+  259  echo $filename
+  260  conda deactivate
+  261  ./run.sh plot_runner.py 
+  262  ./run.sh extract_runner.py 
+  263  filename=$HOME/`date +\%Y\%m\%d\%H\%M\%S`-cron.log
+  264  echo $filename
+  265  filename=$HOME/zimbabwe_`date +\%Y\%m\%d\%H\%M\%S`-cron.log
+  266  echo $filename
+  267  filename=$HOME/zimbabwe_`date +\%Y\%m\%d`-cron.log
+  268  echo $filename
+  269  filename=$HOME/zimbabwe_`date +\%Y\%m\%d`.log
+  270  echo $filename
+  271  crontab -e
+  272  cd /home/wrf/uems/runs/zimbabwe/conf/
+  273  ll
+  274  cd ems_post/
+  275  ll
+  276  nano post_grads.conf 
+  277  cd ../..
+  278  ll
+  279  inotifywait /path/to/directory --recursive --monitor
+  280  sudo sudo apt install inotify-tools
+  281  inotifywait /path/to/directory --recursive --monitor
+  282  pwd
+  283  inotifywait /home/wrf/uems/runs/zimbabwe/ --recursive --monitor
+  284  ls /not_a_directory > /dev/null 2>&1
+  285  if [ $? -ne 0 ]; then   echo "Error: Directory not found"; fi
+  286  cd /home/wrf/uems/runs/zimbabwe/
+  287  ll
+  288  ems_autorun --date 20231205 --cycle 00 --length 180
+  289  ems_post --grads
+  290  tail -f /home/wrf/uems/runs/zimbabwe/rsl.out.0000
+  291  filename=db_backup_`date +\%d\%m\%y`
+  292  echo $filename
+  293  filename=db_backup_`date +20\%y\%m\%d`
+  294  echo $filename
+  295  crontab -e
+  296  pwd
+  297  cd nons/python-plotting-toolbox/
+  298  inotifywait /home/wrf/uems/runs/zimbabwe/ --recursive --monitor
+  299  inotifywait /home/wrf/nons/python-plotting-toolbox/ --recursive --monitor
+  300  "logfile.$(date +"%FT%H%M").log"
+  301  crontab -e
+  302  cd /var/spool/cron/crontabs/
+  303  ll
+  304  sudo grep 'CRON' /var/log/syslog
+  305  crontab -e
+  306  sudo grep 'CRON' /var/log/syslog
+  307  pwd
+  308  cd uems/runs/zimbabwe/
+  309  ll
+  310  cd grib/
+  311  ll
+  312  cd ..
+  313  ems_post --grads
+  314  cd wrfprd/
+  315  ll
+  316  cd ..
+  317  ems_autorun --date 20231204 --cycle 00 --length 120
+  318  ems_post --grads
+  319  cd ../southern_africa/
+  320  ems_autorun --date 20231204 --cycle 00 --length 240
+  321  crontab -e
+  322  ps aux | grep cron
+  323  grep cron /var/log/syslog
+  324  sudo grep cron /var/log/syslog
+  325  sudo grep CRON /var/log/syslog
+  326  crontab -e
+  327  ll
+  328  cd emsprd/
+  329  ll
+  330  cd ../
+  331  ll
+  332  ll
+  333  cd grib/
+  334  ll
+  335  ems_autorun --date 20231204 --cycle 00 --length 180
+  336  cd ..
+  337  ems_autorun --date 20231205 --cycle 00 --length 180
+  338  ll
+  339  cd emsprd/
+  340  ll
+  341  cd grads/
+  342  ll
+  343  cd d02htm/
+  344  ll
+  345  contab -e
+  346  crontab -e
+  347  inotifywait $HOME/nons/gfs-retrieval/ --recursive --monitor
+  348  cd /home/wrf/nons/auto/
+  349  ll
+  350  ./auto_zimbabwe_local.bash 
+  351  crontab -e
+  352  cd ../gfs-retrieval/
+  353  ll
+  354  cd logs/
+  355  ll
+  356  tail -f $HOME/nons/gfs-retrieval/logs/zimbabwe_`date +\%Y\%m\%d`.log
+  357  crontab -e
+  358  cd ../../auto/
+  359  ll
+  360  ./auto_zimbabwe_local.bash 
+  361  crontab -e
+  362  inotifywait $HOME/nons/gfs-retrieval/ --recursive --monitor
+  363  tail -f /home/wrf/uems/runs/zimbabwe/rsl.out.0000
+  364  pwd
+  365  cd /home/wrf/nons/gfs-retrieval/logs/
+  366  ll
+  367  tail -f zimbabwe_20231205.log 
+  368  crontab -e
+  369  ll
+  370  pwd
+  371  ll
+  372  cd /home/wrf/Development/
+  373  ll
+  374  cd apps/
+  375  ll
+  376  cd ubuntu/
+  377  ll
+  378  chmod +x delete_older_files 
+  379  ./delete_older_files 
+  380  ll
+  381  pwd
+  382  cd ../../additional_products/
+  383  ll
+  384  cd GRADS/
+  385  ll
+  386  cd log/
+  387  ll
+  388  pwd
+  389  cd ..
+  390  cd ../../apps/
+  391  ll
+  392  cd ubuntu/
+  393  ll
+  394  ./delete_older_files 
+  395  tail -f /home/wrf/uems/runs/southern_africa/rsl.out.0000
+  396  pwd
+  397  cd /home/wrf/uems/runs/zimbabwe/emsprd/
+  398  ll
+  399  cd /home/wrf/uems/
+  400  ll
+  401  find util/grads/products/kumar/web/ -iname *.html -exec sed -i 's/step(/steps(/g' {} +
+  402  cd /home/wrf/uems/util/grads/products/kumar/
+  403  ll
+  404  cd bin/
+  405  ll
+  406  gfortran -Bstatic -o ../hgt_maxmin hght_maxmin.f
+  407  cd ..
+  408  ll
+  409  cd /home/wrf/nons/gfs-retrieval/
+  410  ll
+  411  cd logs/
+  412  ll
+  413  tail -f zimbabwe.log 
+  414  crontab -e 
+  415  make install
+  416  crontab -e 
+  417  crontab -e
+  418  history
+  419  history | grep "CRON"
+  420  history | grep "/etc"
+  421  cd /home/wrf/nons/auto/
+  422  ll
+  423  ./auto_zimbabwe_local.bash 
+  424  nano auto_zimbabwe_local.bash 
+  425  cd ../python-plotting-toolbox/
+  426  ll
+  427  python3 plot_runner.py 
+  428  code .
+  429  crontab -e
+  430  cd /home/wrf/nons/gfs-retrieval/logs/
+  431  ll
+  432  chmod +x inotify.bash 
+  433  ./inotify.bash 
+  434  crontab -e
+  435  cd /home/wrf/nons/auto/
+  436  ll
+  437  ./auto_zimbabwe_local.bash 
+  438  cd /home/wrf/uems/runs/zimbabwe/
+  439  ll
+  440  cd emsprd/grib/
+  441  ll
+  442  cd ..
+  443  ems_post.pl --grads
+  444  cd ..
+  445  ems_post --grads
+  446  cd /home/wrf/nons/auto/
+  447  ll
+  448  chmod +x copy_d01htm_zimbabwe.bash 
+  449  ll
+  450  ./copy_d01htm_zimbabwe.bash 
+
+
+
+
+  451  cd /home/wrf/uems/runs/zimbabwe/
+  452  ./copy_d01htm_zimbabwe.bash 
+  453  cd /home/wrf/nons/auto/
+  454  ll
+  455  ./copy_d01htm_zimbabwe.bash 
+  456  crontab -e
+  457  cd ../gfs-retrieval/logs/
+  458  ll
+  459  tail -f zimbabwe_20231207.log 
+  460  crontab -e
+  461  cd /home/wrf/uems/runs/southern_africa/emsprd/grads/
+  462  ll
+  463  cp -R d02htm/ /home/wrf/ftp/upload/2024010700
+  464  cp -R d02htm/ /home/wrf/ftp/upload/2024010700/zim/
+  465  cd /home/wrf/nons/auto/
+  466  ll
+  467  ./copy_d01htm_zimbabwe.bash 
+  468  ./auto_zimbabwe_local.bash 
+  469  crontab -e
+  470  cd /home/wrf/uems/runs/southern_africa/
+  471  ll
+  472  cd log/
+  473  ll
+  474  nano PrepDownloadHTTP.log
+  475  tail -f PrepDownloadHTTP.log
+  476  tail -f PrepDownloadHTTP.log-error 
+  477  nano PrepDownloadHTTP.log-error 
+  478  nano PrepDownloadHTTP.log
+  479  tail -f PrepDownloadHTTP.log
+  480  cd /home/wrf/nons/auto/
+  481  ll
+  482  ./auto_zimbabwe_local.bash 
+  483  cd /home/wrf/uems/runs/zimbabwe/
+  484  ll
+  485  cd emsprd/
+  486  ll
+  487  cd grib/
+  488  ll
+  489  cd ..
+  490  ems_autopost --grads
+  491  cd ..
+  492  ems_autopost --grads
+  493  ll
+  494  ems_post --grads
+  495  ll
+  496  ls
+  497  exit
+  498  cd /home/wrf/nons/auto/
+  499  ll
+  500  ./auto_zimbabwe_local.bash 
+  501  cd /home/wrf/nons/auto/
+  502  ll
+  503  ./auto_zimbabwe_local.bash 
+  504  ll
+  505  nano copy_d01htm_zimbabwe3.bash 
+  506  ./copy_d01htm_zimbabwe3.bash 
+  507  ll
+  508  ./auto_zimbabwe_local.bash 
+  509  ssh chawas@192.168.0.105
+  510  ping 192.168.0.105
+  511  ssh chawas@chawas
+  512  ssh chawas@192.168.0.105
+  513  ll
+  514  touch test.txt
+  515  ll
+  516  ll -lrt
+  517  scp test.txt chawas@192.168.0.105
+  518  touch test202401101459.txt
+  519  scp test202401101459.txt  chawas@192.168.0.105
+  520  scp test202401101459.txt  chawas@192.168.0.105:/home/chawas/nons
+  521  ping 192.168.0.105
+  522  scp test202401101459.txt  chawas@192.168.0.105:/home/chawas/nons
+  523  scp test202401101459.txt  chawas@192.168.0.105:/home/chawas/nons/
+  524  scp test202401101459.txt  chawas@192.168.0.105
+  525  sftp chawas@192.168.0.105
+  526  cd /home/wrf/uems/runs/zimbabwe/
+  527  ll
+  528  ems_post --grads
+  529  crontab -e
+  530  crontab -e
+  531  cd /home/wrf/nons/
+  532  ll
+  533  cd gfs-retrieval/
+  534  ll
+  535  cd logs/
+  536  ll
+  537  tail -f zimbabwe_20240109.log 
+  538  cd ../..
+  539  cd auto/
+  540  ll
+  541  ./auto_zimbabwe_local.bash 
+  542  cd ../gfs-retrieval/logs/
+  543  ll
+  544  tail -f zimbabwe_20240109.log 
+  545  cd ../../auto/
+  546  ll
+  547  ./auto_zimbabwe_local.bash 
+  548  cd ../gfs-retrieval/logs/
+  549  ll
+  550  tail -f zimbabwe_20240109.log 
+  551  cd /home/wrf/uems/runs/southern_africa/
+  552  ll
+  553  cd emsprd/grads/
+  554  ll
+  555  crontab -e
+  556  cd ..
+  557  cd zimbabwe/
+  558  ll
+  559  ems_post --grads
+  560  cd ../southern_africa/
+  561  ll
+  562  cd log/
+  563  ll
+  564  cd ../grib/
+  565  ll
+  566  lsb -a
+  567  release -a
+  568  ubuntu --version
+  569  lsb_release -a
+  570  ll
+  571  cd /home/wrf/nons/gfs-retrieval/
+  572  ll
+  573  history | grep "venv"
+  574  crontab -e
+  575  cd /home/wrf/nons/auto/
+  576  ll
+  577  ./auto_zimbabwe_local.bash 
+  578  cd /home/wrf/uems/runs/zimbabwe/
+  579  ll
+  580  ems_post --grads
+  581  cd ../southern_africa/
+  582  ll
+  583  cd emsprd/
+  584  ll
+  585  cd grads/
+  586  ll
+  587  ls -1
+  588  cd /home/wrf/Downloads/
+  589  ll
+  590  sudo wget http://dl.google.com/dl/earth/client/current/google-earth-stable_current_amd64.deb
+  591  sudo dpkg -i google-earth-stable*.deb
+  592  sudo apt-get -f install
+  593  sudo apt-get update
+  594  sudo apt-get install qgis python-qgis
+  595  sudo apt-get install qgis-plugin-grass
+  596  sudo aptitude update
+  597  sudo aptitude -y install qgis
+  598  python install -m libgdal20
+  599  pip install libgdal20
+  600  pip install --upgrade pip
+  601  cd /etc/apt/sources.list.d
+  602  ll
+  603  rm -r qgis.sources 
+  604  sudo rm -r qgis.sources 
+  605  ll
+  606  sudo apt-get install python-software-properties
+  607  sudo add-apt-repository ppa:ubuntugis/ppa
+  608  sudo apt-get -y install qgis 
+  609  cd /home/wrf/nons/auto/
+  610  ll
+  611  ./auto_zimbabwe_local.bash 
+  612  cd /home/wrf/uems/runs/southern_africa/
+  613  ll
+  614  ems_autorun --date 20240125 --cycle 00 --length 384
+  615  ems_autorun --date 20240125 --cycle 00 --length 240
+  616  ems_autorun --date 20240126 --cycle 00 --length 240
+  617  ems_autorun --date 20240126 --cycle 00 --length 168
+  618  cd /home/wrf/nons/auto/
+  619  ./auto_zimbabwe_local.bash 
+  620  cd /home/wrf/NWP_Models/
+  621  ll
+  622  cd WRF_ori/
+  623  ll
+  624  cd installation/
+  625  ll
+  626  cd software/
+  627  ll
+  628  wget http://soostrc.comet.ucar.edu/strc/uems/uems_install.pl.gz -c
+  629  cd /home/wrf/
+  630  ll
+  631  rename uems uems_old
+  632  cd /home/wrf/NWP_Models/
+  633  ll
+  634  cd /home/wrf/NWP_Models/
+  635  ll
+  636  ls
+  637  cd /etc/apt/sources.list.d/
+  638  ll
+  639  cd /home/wrf/uems/runs/zimbabwe/
+  640  ll
+  641  ems_post --grads
+  642  cd /home/wrf/NWP_Models/
+  643  ll
+  644  cd WRF_ori/
+  645  ll
+  646  cd installation/
+  647  ll
+  648  cd software/
+  649  ll
+  650  chmod +x uems_install.pl
+  651  ./uems_install.pl --install --continue
+  652  pwd
+  653  dwiz
+  654  cd /home/wrf/nons/gfs-retrieval/
+  655  ll
+  656  code .
+  657  history > history20240222.txt
